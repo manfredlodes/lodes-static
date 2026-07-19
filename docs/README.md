@@ -3,7 +3,7 @@
 | Feld | Wert |
 |------|------|
 | Dokument | README.md |
-| Version | 0.2 |
+| Version | 0.3 |
 | Status | Aktiv |
 | Erstellt | 2026-07-19 |
 | Letzte Aktualisierung | 2026-07-19 |
@@ -23,21 +23,32 @@ Ziel ist es, dass das Projekt auch nach längerer Zeit oder durch neue Mitwirken
 
 # Lesereihenfolge
 
-Für einen schnellen Einstieg empfiehlt sich folgende Reihenfolge:
+Für neue Mitwirkende und nach längeren Projektpausen empfiehlt sich folgende Reihenfolge:
 
-1. PROJECT.md
-2. CURRENT_STATUS.md
-3. ROADMAP.md
-4. DECISIONS.md
-5. DATA_MODEL.md
+1. README.md
+2. PROJECT.md
+3. CURRENT_STATUS.md
+4. NEXT_STEPS.md
+5. DECISIONS.md
 6. ARCHITECTURE.md
-7. GIT_GUIDE.md
-8. PROJECT_JOURNAL.md
-9. CHANGELOG.md
+7. DATA_MODEL.md
+8. GIT_GUIDE.md
+9. PROJECT_JOURNAL.md
+10. CHANGELOG.md
 
 ---
 
 # Dokumentübersicht
+
+## README.md
+
+Bietet den Einstieg in die Projektdokumentation und erklärt den Aufbau der Dokumente.
+
+**Frage:**
+
+> Wo beginne ich mit dem Projekt?
+
+---
 
 ## PROJECT.md
 
@@ -59,13 +70,13 @@ Beschreibt den aktuellen Projektstand.
 
 ---
 
-## ROADMAP.md
+## NEXT_STEPS.md
 
-Beschreibt die geplante Entwicklung.
+Beschreibt den aktuellen Arbeitsplan und die nächsten Entwicklungsschritte.
 
 **Frage:**
 
-> Wohin entwickelt sich das Projekt?
+> Woran arbeiten wir als Nächstes?
 
 ---
 
@@ -79,16 +90,6 @@ Dokumentiert fachliche, konzeptionelle und architektonische Entscheidungen.
 
 ---
 
-## DATA_MODEL.md
-
-Beschreibt die fachliche Struktur der Daten.
-
-**Frage:**
-
-> Welche Informationen verwaltet das Archiv?
-
----
-
 ## ARCHITECTURE.md
 
 Beschreibt den technischen Aufbau des Systems.
@@ -96,6 +97,16 @@ Beschreibt den technischen Aufbau des Systems.
 **Frage:**
 
 > Wie ist das System aufgebaut?
+
+---
+
+## DATA_MODEL.md
+
+Beschreibt die fachliche Struktur der Daten.
+
+**Frage:**
+
+> Welche Informationen verwaltet das Archiv?
 
 ---
 
