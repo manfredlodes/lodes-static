@@ -3,7 +3,7 @@
 | Feld | Wert |
 |------|------|
 | Dokument | GIT_GUIDE.md |
-| Version | 0.2 |
+| Version | 0.3 |
 | Status | Aktiv |
 | Erstellt | 2026-07-19 |
 | Letzte Aktualisierung | 2026-07-19 |
@@ -34,6 +34,21 @@ Für die Entwicklung von Travel Archive gelten folgende Grundsätze:
 - Nach Abschluss jeder Aufgabe wird der aktuelle Stand geprüft, bevor weitere Änderungen erfolgen.
 
 Diese Arbeitsweise soll verhindern, dass Informationen verloren gehen oder mehrere Änderungen gleichzeitig den Überblick erschweren.
+
+---
+
+# Zusammenarbeit zwischen Anwender und ChatGPT
+
+Für die Zusammenarbeit im Projekt **Travel Archive** gelten zusätzlich folgende Regeln:
+
+- ChatGPT liefert bei Änderungen immer die vollständige Datei.
+- ChatGPT ändert ausschließlich die für die aktuelle Arbeitseinheit vereinbarten Inhalte.
+- ChatGPT nimmt keine zusätzlichen Optimierungen, Umstrukturierungen oder Erweiterungen ohne gemeinsame Entscheidung vor.
+- Änderungen werden vor der Umsetzung gemeinsam abgestimmt.
+- Die Kommunikation orientiert sich an Arbeitseinheiten und nicht an Kalendertagen.
+- Nach einer Unterbrechung wird die Arbeit an der nächsten offenen Arbeitseinheit fortgesetzt.
+
+Diese Regeln gelten für die gesamte Zusammenarbeit im Projekt.
 
 ---
 
@@ -87,11 +102,13 @@ Das Projekt wird zusätzlich in einem privaten GitHub-Repository gespeichert.
 | Eigenschaft | Wert |
 |-------------|------|
 | Plattform | GitHub |
-| Repository | https://github.com/manfredlodes/lodes-static  |
+| Repository | https://github.com/manfredlodes/lodes-static |
 | Remote | origin |
 | Branch | main |
 
 Das Remote-Repository dient als zusätzliche Sicherung, zur Versionsverwaltung und zur Wiederherstellung des Projekts nach einem Computerwechsel oder Systemausfall.
+
+---
 
 # Commit-Regeln
 
