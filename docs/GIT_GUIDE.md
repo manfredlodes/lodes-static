@@ -3,7 +3,7 @@
 | Feld | Wert |
 |------|------|
 | Dokument | GIT_GUIDE.md |
-| Version | 0.3 |
+| Version | 0.4 |
 | Status | Aktiv |
 | Erstellt | 2026-07-19 |
 | Letzte Aktualisierung | 2026-07-19 |
@@ -49,6 +49,28 @@ Für die Zusammenarbeit im Projekt **Travel Archive** gelten zusätzlich folgend
 - Nach einer Unterbrechung wird die Arbeit an der nächsten offenen Arbeitseinheit fortgesetzt.
 
 Diese Regeln gelten für die gesamte Zusammenarbeit im Projekt.
+
+---
+
+# Architektur- und Projektentscheidungen
+
+Für alle wesentlichen fachlichen und technischen Entscheidungen gilt folgender Grundsatz:
+
+1. Problem verstehen.
+2. Anforderungen analysieren.
+3. Mögliche Lösungswege erarbeiten.
+4. Vor- und Nachteile gemeinsam bewerten.
+5. Entscheidung gemeinsam treffen.
+6. Entscheidung nachvollziehbar dokumentieren.
+7. Erst danach mit der Umsetzung beginnen.
+
+Dabei gilt der Leitsatz:
+
+> **Wir entwickeln nichts, bevor wir es verstanden haben.**
+
+Wichtige Entscheidungen sollen nicht nur dokumentieren, **was** beschlossen wurde, sondern auch **warum** die gewählte Lösung gegenüber den betrachteten Alternativen bevorzugt wurde.
+
+Ziel ist eine langfristig wartbare Architektur, deren Entscheidungen auch nach Jahren noch nachvollziehbar sind.
 
 ---
 
@@ -143,6 +165,7 @@ Während einer Arbeitseinheit gelten folgende Regeln:
 - Entscheidungen werden bewusst getroffen und dokumentiert.
 - Qualität ist wichtiger als Geschwindigkeit.
 - Dokumentation ist Bestandteil der Entwicklung.
+- Wichtige Entscheidungen werden vor der Umsetzung analysiert und gemeinsam beschlossen.
 
 ---
 
