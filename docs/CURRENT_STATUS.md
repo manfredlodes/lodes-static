@@ -3,7 +3,7 @@
 | Feld | Wert |
 |------|------|
 | Dokument | CURRENT_STATUS.md |
-| Version | 0.2 |
+| Version | 0.3 |
 | Status | Aktiv |
 | Erstellt | 2026-07-19 |
 | Letzte Aktualisierung | 2026-07-19 |
@@ -21,11 +21,11 @@ Es dient als zentrale Einstiegshilfe für neue Arbeitssitzungen und gibt einen �
 
 # Projektstatus
 
-Das Projekt befindet sich in der Planungs- und Architekturphase.
+Das Projekt befindet sich weiterhin in der Planungs- und Architekturphase.
 
-Die grundlegende Vision, Zielsetzung und Arbeitsweise wurden definiert. Ziel des Projekts ist die Entwicklung eines digitalen Archivsystems für Reisen. Die erste Anwendung dieses Archivsystems wird die Website **lodes.ch** sein.
+Die Vision, Zielsetzung, Arbeitsweise sowie die grundlegende Projektarchitektur sind definiert und dokumentiert. Ziel des Projekts ist die Entwicklung eines digitalen Archivsystems für Reisen. Die erste Anwendung dieses Archivsystems wird die Website **lodes.ch** sein.
 
-Der Schwerpunkt liegt derzeit auf dem Aufbau einer vollständigen und konsistenten Projektdokumentation. Die eigentliche Implementierung beginnt erst nach Abschluss dieser Grundlagen.
+Der Schwerpunkt liegt derzeit auf der fachlichen Modellierung des Systems. Die technische Implementierung beginnt erst, nachdem die konzeptionellen Grundlagen vollständig ausgearbeitet und dokumentiert wurden.
 
 ---
 
@@ -46,30 +46,38 @@ Die Website dient als Präsentationsschicht dieses Archivsystems.
 - Git-Repository erstellt
 - Projektstruktur angelegt
 - Dokumentationsstruktur definiert
+- README.md erstellt und erweitert
 - PROJECT.md Version 0.2 fertiggestellt
-- docs/README.md Version 0.2 fertiggestellt
-- CURRENT_STATUS.md Version 0.2 aktualisiert
-- GIT_GUIDE.md Version 0.1 erstellt
+- CURRENT_STATUS.md aktualisiert
+- DECISIONS.md erstellt
+- DATA_MODEL.md erstellt
+- ARCHITECTURE.md erstellt
+- GIT_GUIDE.md Version 0.4 fertiggestellt
+- PROJECT_JOURNAL.md erstellt
+- CHANGELOG.md erstellt
+- ROADMAP.md entfernt und durch NEXT_STEPS.md ersetzt
+- NEXT_STEPS.md erstellt
 - Grundlegende Projektphilosophie definiert
 - Verbindliche Arbeitsweise dokumentiert
+- Architektur- und Entscheidungsprozess festgelegt
 
 ---
 
-## Wichtige Projektentscheidungen
+# Wichtige Projektentscheidungen
 
-### Architektur
+## Architektur
 
 Travel Archive wird als digitales Archivsystem entwickelt.
 
 Die Website ist nicht das eigentliche Projekt, sondern die erste Anwendung des Archivsystems.
 
-### Datenmodell
+## Datenmodell
 
 Die Reise bildet die zentrale Entität des Systems.
 
 Alle weiteren Daten werden einer Reise oder ihren Bestandteilen zugeordnet.
 
-### Projektphilosophie
+## Projektphilosophie
 
 - Dokumentation vor Implementierung
 - Daten vor Darstellung
@@ -78,6 +86,7 @@ Alle weiteren Daten werden einer Reise oder ihren Bestandteilen zugeordnet.
 - Langfristige Wartbarkeit
 - Entscheidungen werden dokumentiert
 - Entwicklung erfolgt schrittweise
+- Wir entwickeln nichts, bevor wir es verstanden haben.
 
 ---
 
@@ -98,27 +107,25 @@ Alle weiteren Daten werden einer Reise oder ihren Bestandteilen zugeordnet.
 | Dokument | Status |
 |-----------|--------|
 | PROJECT.md | ✅ Version 0.2 |
-| CURRENT_STATUS.md | ✅ Version 0.2 |
-| README.md | ✅ Version 0.2 |
-| ROADMAP.md | ⏳ Offen |
-| DECISIONS.md | ⏳ Offen |
-| DATA_MODEL.md | ⏳ Offen |
-| ARCHITECTURE.md | ⏳ Offen |
-| GIT_GUIDE.md | ✅ Version 0.1 |
-| PROJECT_JOURNAL.md | ⏳ Offen |
-| CHANGELOG.md | Vorhanden |
+| CURRENT_STATUS.md | ✅ Version 0.3 |
+| README.md | ✅ Version 0.3 |
+| NEXT_STEPS.md | ✅ Vorhanden |
+| DECISIONS.md | ✅ Vorhanden |
+| DATA_MODEL.md | ✅ Vorhanden |
+| ARCHITECTURE.md | ✅ Vorhanden |
+| GIT_GUIDE.md | ✅ Version 0.4 |
+| PROJECT_JOURNAL.md | ✅ Version 0.2 |
+| CHANGELOG.md | ✅ Vorhanden |
 
 ---
 
 # Nächste Schritte
 
-1. DECISIONS.md erstellen
-2. PROJECT_JOURNAL.md erstellen
-3. ROADMAP.md erstellen bzw. vervollständigen
-4. DATA_MODEL.md entwickeln
-5. ARCHITECTURE.md definieren
-
-Erst danach startet die technische Implementierung.
+1. Fachlichen Workflow einer Reise modellieren.
+2. Vollständigen Datenfluss vom Import bis zur Veröffentlichung definieren.
+3. Offene fachliche Anforderungen identifizieren und dokumentieren.
+4. Daraus das detaillierte Datenmodell und die Importprozesse ableiten.
+5. Erst anschließend mit der technischen Implementierung beginnen.
 
 ---
 
@@ -134,22 +141,25 @@ Regeln zur Arbeitsweise und zum Entwicklungsprozess werden in `GIT_GUIDE.md` gep
 
 # Letzte Aktualisierung
 
-Heute wurden die Grundlagen der Projektorganisation erweitert.
+Die Projektdokumentation wurde vollständig konsolidiert.
 
-Neu hinzugekommen sind insbesondere:
+Neu hinzugekommen bzw. aktualisiert wurden insbesondere:
 
-- verbindlich dokumentierte Arbeitsweise
-- Git-Workflow als Projektdokument
-- schrittweises Vorgehen (eine Aufgabe, eine Datei)
-- Qualität und Nachvollziehbarkeit als zentrale Entwicklungsprinzipien
-- Aktualisierung der zentralen Projektdokumente auf Version 0.2
+- NEXT_STEPS.md als Nachfolger von ROADMAP.md
+- PROJECT_JOURNAL.md
+- DECISIONS.md
+- DATA_MODEL.md
+- ARCHITECTURE.md
+- Erweiterung des GIT_GUIDE.md um den dokumentierten Entscheidungsprozess
+- Aktualisierung des Dokumentationsstatus
+- Ausrichtung der nächsten Arbeitseinheiten auf die fachliche Modellierung des Travel Archive
 
 ---
 
 # Zusammenfassung
 
-Das Fundament des Projekts ist gelegt.
+Das Fundament des Projekts ist abgeschlossen.
 
-Vision, Projektphilosophie, Dokumentationsstruktur und Arbeitsweise sind dokumentiert und bilden die verbindliche Grundlage für die weitere Entwicklung.
+Vision, Projektphilosophie, Dokumentationsstruktur, Arbeitsweise, Datenmodell und Architektur bilden die verbindliche Grundlage für die weitere Entwicklung.
 
-Der nächste Schwerpunkt liegt auf der Dokumentation der grundlegenden Entscheidungen und der Erstellung des Projektjournals. Anschließend folgen Datenmodell, Architektur und schließlich die technische Umsetzung.
+Die nächste Projektphase beginnt mit der Modellierung des fachlichen Workflows einer Reise. Aus diesem Workflow werden anschließend das detaillierte Datenmodell, die Importprozesse und die technische Umsetzung abgeleitet.
