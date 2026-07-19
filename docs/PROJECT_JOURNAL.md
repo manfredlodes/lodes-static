@@ -3,7 +3,7 @@
 | Feld | Wert |
 |------|------|
 | Dokument | PROJECT_JOURNAL.md |
-| Version | 0.1 |
+| Version | 0.2 |
 | Status | Aktiv |
 | Erstellt | 2026-07-19 |
 | Letzte Aktualisierung | 2026-07-19 |
@@ -15,9 +15,13 @@
 
 Dieses Dokument beschreibt die Entwicklungsgeschichte des Projekts **Travel Archive**.
 
-Es dokumentiert wichtige Meilensteine, Arbeitssitzungen und richtungsweisende Ereignisse in chronologischer Reihenfolge.
+Es dokumentiert die einzelnen Arbeitseinheiten des Projekts, ihre Ziele, Ergebnisse, Entscheidungen und Erkenntnisse.
 
-Im Gegensatz zu den anderen Projektdokumenten steht hier nicht die fachliche Beschreibung des Systems im Mittelpunkt, sondern die Entstehung und Weiterentwicklung des Projekts.
+Das Journal ergänzt den Changelog und die Git-Historie.
+
+- **Git** dokumentiert technische Änderungen.
+- **CHANGELOG.md** dokumentiert wesentliche Projektänderungen.
+- **PROJECT_JOURNAL.md** dokumentiert den Entwicklungsweg des Projekts.
 
 ---
 
@@ -25,75 +29,157 @@ Im Gegensatz zu den anderen Projektdokumenten steht hier nicht die fachliche Bes
 
 ---
 
-## Session 001 – Projektstart
+## Arbeitseinheit 001 – Projektstart
 
-**Datum:** 2026-07-19
+**Begonnen:** 2026-07-19
 
-### Schwerpunkte
+**Abgeschlossen:** 2026-07-19
 
-- Git-Repository erstellt (`lodes-static`)
-- Grundlegende Projektstruktur angelegt
+### Ziel
+
+Grundlegende Projektstruktur erstellen.
+
+### Durchgeführte Arbeiten
+
+- Git-Repository `lodes-static` erstellt
+- Grundlegende Projektstruktur aufgebaut
 - Dokumentationsverzeichnis erstellt
 - Erste Projektdokumente angelegt
-- Projektvision formuliert
+- Projektvision definiert
 
-### Ergebnis
+### Entscheidungen
 
-Das Projekt wurde als langfristiges digitales Archivsystem für Reisen definiert. Die Dokumentation bildet von Beginn an einen wesentlichen Bestandteil der Entwicklung.
+- Travel Archive wird als langfristiges digitales Reisearchiv entwickelt.
+- Dokumentation ist ein zentraler Bestandteil der Entwicklung.
+
+### Erkenntnisse
+
+Ein stabiles Fundament erleichtert die spätere Entwicklung erheblich.
+
+### Betroffene Dokumente
+
+- README.md
+- PROJECT.md
 
 ---
 
-## Session 002 – Projektarchitektur
+## Arbeitseinheit 002 – Projektorganisation
 
-**Datum:** 2026-07-19
+**Begonnen:** 2026-07-19
 
-### Schwerpunkte
+**Abgeschlossen:** 2026-07-19
 
-- Projektziel präzisiert
+### Ziel
+
+Projekt fachlich und organisatorisch strukturieren.
+
+### Durchgeführte Arbeiten
+
 - Reise als zentrale Entität definiert
 - Website als erste Anwendung des Archivsystems festgelegt
-- Grundlegende Projektphilosophie ausgearbeitet
+- Projektphilosophie ausgearbeitet
 
-### Ergebnis
+### Entscheidungen
 
-Die fachliche Ausrichtung des Projekts wurde festgelegt. Damit entstand die Grundlage für alle weiteren Architektur- und Datenmodellentscheidungen.
+- Trip ist die zentrale Domänenentität.
+- Die Website ist eine Darstellung des Archivs, nicht das Archiv selbst.
 
----
+### Erkenntnisse
 
-## Session 003 – Arbeitsweise und Projektdokumentation
+Die Trennung zwischen Archiv und Präsentation schafft langfristige Flexibilität.
 
-**Datum:** 2026-07-19
+### Betroffene Dokumente
 
-### Schwerpunkte
-
-- Arbeitsweise grundlegend überarbeitet
-- Verbindlichen Entwicklungsprozess definiert
-- `GIT_GUIDE.md` erstellt
-- `PROJECT.md` erweitert
-- `README.md` aktualisiert
-- `CURRENT_STATUS.md` aktualisiert
-- `DECISIONS.md` erstellt
-- Dokumentationsstruktur konsolidiert
-
-### Ergebnis
-
-Die Zusammenarbeit wurde verbindlich dokumentiert.
-
-Kernpunkte der neuen Arbeitsweise:
-
-- eine Aufgabe gleichzeitig
-- eine Datei gleichzeitig
-- vollständige Dateien statt einzelner Textfragmente
-- speichern vor dem nächsten Arbeitsschritt
-- Git erst nach Abschluss einer Arbeitseinheit
-- nachvollziehbare Dokumentation aller wesentlichen Entscheidungen
-
-Damit besitzt das Projekt nun nicht nur eine dokumentierte Architektur, sondern auch einen dokumentierten Entwicklungsprozess.
+- PROJECT.md
+- DECISIONS.md
 
 ---
 
-# Ziel
+## Arbeitseinheit 003 – Entwicklungsprozess
 
-Das Project Journal soll die Geschichte von Travel Archive nachvollziehbar dokumentieren.
+**Begonnen:** 2026-07-19
 
-Neue Einträge werden ausschließlich für bedeutende Arbeitssitzungen, Meilensteine oder grundlegende Projektänderungen ergänzt.
+**Abgeschlossen:** 2026-07-19
+
+### Ziel
+
+Verbindlichen Entwicklungsprozess festlegen.
+
+### Durchgeführte Arbeiten
+
+- Arbeitsweise vollständig überarbeitet
+- GIT_GUIDE.md erstellt und erweitert
+- README.md angepasst
+- CURRENT_STATUS.md aktualisiert
+- DECISIONS.md erstellt
+- Dokumentationsstruktur vereinheitlicht
+
+### Entscheidungen
+
+- Eine Arbeitseinheit gleichzeitig.
+- Eine Datei gleichzeitig.
+- Vollständige Dateien statt Textfragmente.
+- Git erst nach Abschluss einer Arbeitseinheit.
+
+### Erkenntnisse
+
+Ein klar definierter Entwicklungsprozess verbessert Qualität und Nachvollziehbarkeit.
+
+### Betroffene Dokumente
+
+- GIT_GUIDE.md
+- README.md
+- CURRENT_STATUS.md
+- DECISIONS.md
+
+---
+
+## Arbeitseinheit 004 – Dokumentationssystem
+
+**Begonnen:** 2026-07-19
+
+**Abgeschlossen:** 2026-07-19
+
+### Ziel
+
+Dokumentationssystem vervollständigen.
+
+### Durchgeführte Arbeiten
+
+- CHANGELOG.md erstellt
+- DATA_MODEL.md erstellt
+- ARCHITECTURE.md erstellt
+
+### Entscheidungen
+
+- Changelog dokumentiert Projektänderungen.
+- DATA_MODEL beschreibt das fachliche Modell.
+- ARCHITECTURE beschreibt die technische Struktur.
+
+### Erkenntnisse
+
+Die Dokumentation bildet nun eine vollständige Grundlage für die eigentliche Entwicklung.
+
+### Betroffene Dokumente
+
+- CHANGELOG.md
+- DATA_MODEL.md
+- ARCHITECTURE.md
+
+---
+
+# Grundsätze
+
+Das Journal wird fortlaufend erweitert.
+
+Jede neue Arbeitseinheit erhält:
+
+- eine fortlaufende Nummer,
+- Beginn und Abschluss,
+- Ziel,
+- durchgeführte Arbeiten,
+- Entscheidungen,
+- Erkenntnisse,
+- betroffene Dokumente.
+
+Dadurch bleibt die Entwicklung des Projekts auch nach längerer Zeit vollständig nachvollziehbar.
