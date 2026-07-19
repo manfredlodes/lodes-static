@@ -3,7 +3,7 @@
 | Feld | Wert |
 |------|------|
 | Dokument | GIT_GUIDE.md |
-| Version | 0.1 |
+| Version | 0.2 |
 | Status | Aktiv |
 | Erstellt | 2026-07-19 |
 | Letzte Aktualisierung | 2026-07-19 |
@@ -61,6 +61,14 @@ Für jede abgeschlossene Arbeitseinheit wird folgender Ablauf verwendet:
 git status
 git add <Dateien>
 git commit -m "<Commit-Nachricht>"
+git push
+git status
+```
+
+Vor Beginn einer neuen Arbeitssitzung wird geprüft, ob das lokale Repository aktuell ist und keine offenen Änderungen vorhanden sind.
+
+```bash
+git pull
 git status
 ```
 
@@ -71,6 +79,19 @@ nothing to commit, working tree clean
 ```
 
 ---
+
+# Remote Repository
+
+Das Projekt wird zusätzlich in einem privaten GitHub-Repository gespeichert.
+
+| Eigenschaft | Wert |
+|-------------|------|
+| Plattform | GitHub |
+| Repository | https://github.com/manfredlodes/lodes-static  |
+| Remote | origin |
+| Branch | main |
+
+Das Remote-Repository dient als zusätzliche Sicherung, zur Versionsverwaltung und zur Wiederherstellung des Projekts nach einem Computerwechsel oder Systemausfall.
 
 # Commit-Regeln
 
