@@ -1,182 +1,174 @@
 # Travel Archive
 
-Version: 0.1.0
+> Ein digitales Archivsystem für Reisen – unabhängig von ihrer Darstellung.
 
-Stand: 18.07.2026
+**Dokument:** PROJECT.md  
+**Version:** 0.1  
+**Status:** Aktiv  
+**Letzte Aktualisierung:** 2026-07-19
 
-Status: In Planung
-
-Projektleitung:
-Manfred Lodes
-
-Softwarearchitektur:
-ChatGPT
+> Dieses Dokument beschreibt die Vision, Ziele und Grundprinzipien des Projekts.
+> Es dient als verbindliche Grundlage für alle Architektur- und Entwicklungsentscheidungen und wird während der gesamten Projektlaufzeit fortgeschrieben.
 
 ---
 
-# Projektvision
+# 1. Vision
 
-Travel Archive ist das zentrale digitale Reisearchiv von Manfred und Cornelia Lodes.
+Travel Archive ist ein digitales Archivsystem zur langfristigen Dokumentation, Archivierung und Präsentation von Reisen.
 
-Das Projekt dient der langfristigen Archivierung, Verwaltung und Präsentation aller Reisen.
+Im Mittelpunkt stehen nicht Webseiten, sondern die Reisen selbst mit allen dazugehörigen Informationen. Dazu gehören unter anderem Reiseberichte, Fotos, Videos, GPX-Dateien, KML-Dateien, Karten, Fahrzeuge, Orte sowie weitere strukturierte Metadaten.
 
-Die Website lodes.ch ist dabei lediglich eine Präsentationsschicht des Archivs.
+Das Archiv bildet den zentralen Kern des Projekts. Anwendungen greifen auf diese Daten zu und präsentieren sie in geeigneter Form.
 
-Das eigentliche Produkt ist das Archiv selbst.
+Die Website **lodes.ch** ist die erste Anwendung dieses Archivsystems. Weitere Anwendungen können künftig ergänzt werden, ohne die zugrunde liegenden Daten verändern zu müssen.
 
 ---
 
-# Projektziel
+# 2. Mission
 
-Es entsteht ein System, das Reisen vollständig dokumentiert und dauerhaft bewahrt.
+Ziel des Projekts ist die Entwicklung eines langlebigen, wartbaren und unabhängigen digitalen Archivsystems für Reisen.
 
-Eine Reise besteht nicht nur aus Fotos oder GPX-Dateien, sondern aus der Kombination aller Informationen.
+Travel Archive soll sämtliche Informationen einer Reise dauerhaft speichern, strukturiert verwalten und unabhängig von einer bestimmten Technologie oder Darstellungsform nutzbar machen.
 
-Zum Archiv gehören unter anderem:
+Die erste Ausbaustufe ist eine statische Website als Nachfolger der bisherigen WordPress-Website. Das Archiv selbst bleibt jedoch unabhängig von seiner jeweiligen Präsentation.
 
-- Reiseinformationen
+---
+
+# 3. Projektphilosophie
+
+Travel Archive ist kein Website-Projekt.
+
+Travel Archive ist ein digitales Archivsystem.
+
+Die Daten stehen im Mittelpunkt. Anwendungen greifen auf diese Daten zu und stellen sie in geeigneter Form dar.
+
+Alle grundlegenden Entscheidungen orientieren sich an folgenden Prinzipien:
+
+- Daten vor Darstellung
+- Reisen vor Webseiten
+- Dokumentation vor Implementierung
+- Langfristige Wartbarkeit
+- Nachvollziehbare Architekturentscheidungen
+- Trennung von Inhalt, Logik und Präsentation
+- Minimale technische Abhängigkeiten
+- Erweiterbarkeit ohne grundlegende Änderungen am Datenbestand
+
+---
+
+# 4. Projektziele
+
+Das Projekt verfolgt folgende Ziele:
+
+- Langfristige Archivierung aller Reisen
+- Einheitliche Struktur sämtlicher Reisedaten
+- Unabhängigkeit von WordPress
+- Hohe Performance
+- Einfache Pflege neuer Reisen
+- Moderne und responsive Benutzeroberfläche
+- Nachhaltige Softwarearchitektur
+- Vollständige Projektdokumentation
+- Langfristige Erweiterbarkeit
+
+---
+
+# 5. Projektumfang (Scope)
+
+Zum Projekt gehören insbesondere:
+
+- Reisen
+- Reiseetappen
+- Reiseberichte
 - Fotos
 - Videos
 - GPX-Dateien
-- KML/KMZ-Dateien
+- KML-Dateien
 - Karten
-- Reiseberichte
-- Downloads
 - Fahrzeuge
-- Orte
 - Länder
-- Etappen
-- Statistiken
-- Erinnerungen und Highlights
+- Regionen
+- Orte
+- Downloads
+- Suchfunktion
+- Responsive Website
+- Suchmaschinenoptimierung (SEO)
 
-Das System soll mindestens die nächsten 10 bis 20 Jahre nutzbar bleiben.
-
----
-
-# Leitbild
-
-Travel Archive dokumentiert nicht Webseiten.
-
-Travel Archive dokumentiert Reisen.
-
-Die Technik dient ausschließlich dazu, Erinnerungen dauerhaft zu bewahren.
+Weitere Funktionen können später ergänzt werden, sofern sie den Grundprinzipien des Projekts entsprechen.
 
 ---
 
-# Grundprinzipien
+# 6. Nicht-Ziele
 
-## Die Reise steht im Mittelpunkt.
+Bewusst nicht Bestandteil des Projekts sind:
 
-Alle Informationen beziehen sich auf eine Reise.
-
----
-
-## Originaldaten werden niemals verändert.
-
-Originalfotos
-
-Original-GPX-Dateien
-
-Original-KML-Dateien
-
-Originalvideos
-
-bleiben dauerhaft unverändert erhalten.
+- WordPress als zukünftige Plattform
+- Benutzerverwaltung
+- Kommentarfunktion
+- Forum
+- Social Network
+- Online-Shop
+- Werbung
+- Komplexes Content-Management-System
+- Verpflichtende Datenbank
+- Cloud-Abhängigkeit
 
 ---
 
-## Daten werden nur einmal gespeichert.
+# 7. Zielgruppen
 
-Es gibt keine redundanten Datenhaltung.
+## Primäre Zielgruppe
 
-Alle Informationen werden miteinander verknüpft.
+- Betreiber und Autoren des Archivs
 
----
+## Sekundäre Zielgruppen
 
-## Offene Standards
-
-Das Projekt verwendet ausschließlich offene und dokumentierte Dateiformate.
-
-Bevorzugt werden:
-
-- HTML5
-- CSS3
-- JavaScript (ES6+)
-- JSON
-- GPX
-- KML
-- WebP
-- JPG
-- PNG
-- Markdown
-
----
-
-## Trennung von Daten und Darstellung
-
-Das Archiv enthält ausschließlich Daten.
-
-Die Website stellt diese Daten dar.
-
-Dadurch bleibt das Archiv unabhängig von jeder zukünftigen Website.
-
----
-
-## Langfristigkeit
-
-Alle Entscheidungen werden unter dem Gesichtspunkt getroffen, dass das Projekt auch in vielen Jahren noch verständlich, wartbar und erweiterbar ist.
-
-Kurzfristige Lösungen werden vermieden.
-
----
-
-# Zielgruppen
-
-Primäre Zielgruppe
-
-- Manfred und Cornelia Lodes
-
-Sekundäre Zielgruppen
-
-- Motorradfahrer
-- Wohnmobilfahrer
 - Familie
 - Freunde
-- Reiseinteressierte
+- Motorradreisende
+- Wohnmobilreisende
+- Reiseinteressierte Besucher
 
 ---
 
-# Qualitätsziele
+# 8. Qualitätsziele
 
-Das Projekt soll
+Travel Archive soll:
 
-- schnell sein
-- wartbar sein
-- modular aufgebaut sein
-- dokumentiert sein
-- leicht erweiterbar sein
-- datenschutzfreundlich sein
-- suchmaschinenfreundlich sein
-- barrierearm gestaltet werden
+- schnell
+- stabil
+- wartbar
+- nachvollziehbar dokumentiert
+- erweiterbar
+- responsiv
+- suchmaschinenfreundlich
+- barrierearm
 
----
-
-# Arbeitsweise
-
-Das Projekt wird wie ein professionelles Softwareprojekt entwickelt.
-
-Jede größere Entscheidung wird dokumentiert.
-
-Neue Funktionen müssen sich in die bestehende Architektur einfügen.
-
-Es werden keine schnellen Notlösungen eingebaut.
-
-Qualität ist wichtiger als Geschwindigkeit.
+sein.
 
 ---
 
-# Projektmotto
+# 9. Langfristige Vision
 
-"Nicht die Website ist das Ziel.
+Travel Archive ist als langfristiges Archivsystem konzipiert.
 
-Das Archiv ist das Ziel."
+Neue Reisen, Fahrzeuge, Medien und zukünftige Funktionen sollen ergänzt werden können, ohne bestehende Daten oder deren Struktur grundlegend verändern zu müssen.
+
+Der langfristige Wert des Projekts liegt in den archivierten Daten – nicht in einer bestimmten Technologie oder Website.
+
+---
+
+# 10. Erfolgskriterien
+
+Das Projekt gilt als erfolgreich, wenn:
+
+- alle Reisen dauerhaft archiviert werden können,
+- neue Reisen einfach ergänzt werden können,
+- keine Abhängigkeit mehr von WordPress besteht,
+- sämtliche Daten strukturiert gespeichert sind,
+- das Projekt langfristig wartbar bleibt,
+- weitere Anwendungen auf denselben Daten aufbauen können.
+
+---
+
+# Leitsatz
+
+> **Die Reise ist die zentrale Entität des Systems. Alles andere beschreibt, dokumentiert oder ergänzt sie.**
