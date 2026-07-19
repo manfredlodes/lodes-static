@@ -3,7 +3,7 @@
 | Feld | Wert |
 |------|------|
 | Dokument | README.md |
-| Version | 0.1 |
+| Version | 0.2 |
 | Status | Aktiv |
 | Erstellt | 2026-07-19 |
 | Letzte Aktualisierung | 2026-07-19 |
@@ -15,7 +15,7 @@
 
 Dieses Verzeichnis enthält die vollständige Projektdokumentation von **Travel Archive**.
 
-Die Dokumentation beschreibt nicht nur die technische Umsetzung, sondern auch die Vision, die Architektur, die Projektentscheidungen sowie den aktuellen Entwicklungsstand.
+Die Dokumentation beschreibt nicht nur die technische Umsetzung, sondern auch die Vision, die Architektur, die Projektentscheidungen, die Arbeitsweise sowie den aktuellen Entwicklungsstand.
 
 Ziel ist es, dass das Projekt auch nach längerer Zeit oder durch neue Mitwirkende vollständig nachvollzogen werden kann.
 
@@ -43,7 +43,7 @@ Für einen schnellen Einstieg empfiehlt sich folgende Reihenfolge:
 
 Beschreibt Vision, Ziele, Projektumfang und grundlegende Philosophie.
 
-Frage:
+**Frage:**
 
 > Was ist Travel Archive?
 
@@ -53,7 +53,7 @@ Frage:
 
 Beschreibt den aktuellen Projektstand.
 
-Frage:
+**Frage:**
 
 > Wo steht das Projekt heute?
 
@@ -63,7 +63,7 @@ Frage:
 
 Beschreibt die geplante Entwicklung.
 
-Frage:
+**Frage:**
 
 > Wohin entwickelt sich das Projekt?
 
@@ -71,9 +71,9 @@ Frage:
 
 ## DECISIONS.md
 
-Dokumentiert grundlegende Projekt- und Architekturentscheidungen.
+Dokumentiert fachliche, konzeptionelle und architektonische Entscheidungen.
 
-Frage:
+**Frage:**
 
 > Warum wurde etwas so entschieden?
 
@@ -83,7 +83,7 @@ Frage:
 
 Beschreibt die fachliche Struktur der Daten.
 
-Frage:
+**Frage:**
 
 > Welche Informationen verwaltet das Archiv?
 
@@ -93,7 +93,7 @@ Frage:
 
 Beschreibt den technischen Aufbau des Systems.
 
-Frage:
+**Frage:**
 
 > Wie ist das System aufgebaut?
 
@@ -101,11 +101,11 @@ Frage:
 
 ## GIT_GUIDE.md
 
-Beschreibt den Git-Workflow und die Regeln für die Versionsverwaltung.
+Beschreibt die verbindliche Arbeitsweise, den Git-Workflow und die Regeln für die Zusammenarbeit im Projekt.
 
-Frage:
+**Frage:**
 
-> Wie arbeiten wir im Projekt?
+> Wie entwickeln wir Travel Archive?
 
 ---
 
@@ -113,9 +113,9 @@ Frage:
 
 Dokumentiert wichtige Meilensteine und die Entwicklungsgeschichte.
 
-Frage:
+**Frage:**
 
-> Wie ist das Projekt entstanden?
+> Wie hat sich das Projekt entwickelt?
 
 ---
 
@@ -123,7 +123,7 @@ Frage:
 
 Dokumentiert Änderungen an der Software.
 
-Frage:
+**Frage:**
 
 > Was hat sich zwischen den Versionen geändert?
 
@@ -138,9 +138,12 @@ Für die gesamte Dokumentation gelten folgende Grundsätze:
 - Wichtige Entscheidungen werden dokumentiert.
 - Änderungen sind nachvollziehbar versioniert.
 - Die Dokumentation wird gemeinsam mit der Software weiterentwickelt.
+- Die dokumentierte Arbeitsweise ist Bestandteil der Projektdokumentation.
 
 ---
 
 # Ziel
 
 Die Dokumentation soll jederzeit den aktuellen Wissensstand des Projekts widerspiegeln und den Einstieg in das Projekt erleichtern.
+
+Sie soll sowohl die fachlichen und technischen Entscheidungen als auch den Entwicklungsprozess nachvollziehbar dokumentieren.

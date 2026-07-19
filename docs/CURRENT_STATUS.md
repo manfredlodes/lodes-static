@@ -3,7 +3,7 @@
 | Feld | Wert |
 |------|------|
 | Dokument | CURRENT_STATUS.md |
-| Version | 0.1 |
+| Version | 0.2 |
 | Status | Aktiv |
 | Erstellt | 2026-07-19 |
 | Letzte Aktualisierung | 2026-07-19 |
@@ -46,11 +46,12 @@ Die Website dient als Präsentationsschicht dieses Archivsystems.
 - Git-Repository erstellt
 - Projektstruktur angelegt
 - Dokumentationsstruktur definiert
-- README.md erstellt
-- PROJECT.md Version 0.1 fertiggestellt
-- docs/README.md Version 0.1 erstellt
-- Git-Arbeitsweise festgelegt
+- PROJECT.md Version 0.2 fertiggestellt
+- docs/README.md Version 0.2 fertiggestellt
+- CURRENT_STATUS.md Version 0.2 aktualisiert
+- GIT_GUIDE.md Version 0.1 erstellt
 - Grundlegende Projektphilosophie definiert
+- Verbindliche Arbeitsweise dokumentiert
 
 ---
 
@@ -73,8 +74,10 @@ Alle weiteren Daten werden einer Reise oder ihren Bestandteilen zugeordnet.
 - Dokumentation vor Implementierung
 - Daten vor Darstellung
 - Einfachheit vor Komplexität
-- Langfristige Wartbarkeit vor kurzfristiger Geschwindigkeit
+- Qualität vor Geschwindigkeit
+- Langfristige Wartbarkeit
 - Entscheidungen werden dokumentiert
+- Entwicklung erfolgt schrittweise
 
 ---
 
@@ -82,11 +85,11 @@ Alle weiteren Daten werden einer Reise oder ihren Bestandteilen zugeordnet.
 
 **Name**
 
-lodes-static
+`lodes-static`
 
 **Branch**
 
-main
+`main`
 
 ---
 
@@ -94,14 +97,14 @@ main
 
 | Dokument | Status |
 |-----------|--------|
-| PROJECT.md | ✅ Version 0.1 abgeschlossen |
-| CURRENT_STATUS.md | ✅ Version 0.1 |
-| README.md | ✅ Version 0.1 |
+| PROJECT.md | ✅ Version 0.2 |
+| CURRENT_STATUS.md | ✅ Version 0.2 |
+| README.md | ✅ Version 0.2 |
 | ROADMAP.md | ⏳ Offen |
 | DECISIONS.md | ⏳ Offen |
 | DATA_MODEL.md | ⏳ Offen |
 | ARCHITECTURE.md | ⏳ Offen |
-| GIT_GUIDE.md | ⏳ Offen |
+| GIT_GUIDE.md | ✅ Version 0.1 |
 | PROJECT_JOURNAL.md | ⏳ Offen |
 | CHANGELOG.md | Vorhanden |
 
@@ -109,12 +112,11 @@ main
 
 # Nächste Schritte
 
-1. ROADMAP.md erstellen
-2. DECISIONS.md erstellen
-3. DATA_MODEL.md entwickeln
-4. ARCHITECTURE.md definieren
-5. GIT_GUIDE.md erstellen
-6. PROJECT_JOURNAL.md beginnen
+1. DECISIONS.md erstellen
+2. PROJECT_JOURNAL.md erstellen
+3. ROADMAP.md erstellen bzw. vervollständigen
+4. DATA_MODEL.md entwickeln
+5. ARCHITECTURE.md definieren
 
 Erst danach startet die technische Implementierung.
 
@@ -124,21 +126,23 @@ Erst danach startet die technische Implementierung.
 
 Derzeit sind keine offenen Grundsatzentscheidungen vorhanden.
 
-Neue grundlegende Entscheidungen werden künftig in `DECISIONS.md` dokumentiert.
+Neue fachliche und architektonische Entscheidungen werden in `DECISIONS.md` dokumentiert.
+
+Regeln zur Arbeitsweise und zum Entwicklungsprozess werden in `GIT_GUIDE.md` gepflegt.
 
 ---
 
 # Letzte Aktualisierung
 
-Die Projektvision wurde von einer statischen Website zu einem digitalen Archivsystem weiterentwickelt.
+Heute wurden die Grundlagen der Projektorganisation erweitert.
 
-Die Arbeitsweise des Projekts wurde definiert:
+Neu hinzugekommen sind insbesondere:
 
-- vollständige Dokumentation
-- versionierte Dokumente
-- nachvollziehbare Entscheidungen
-- Git als zentrales Versionssystem
-- vollständige Dateien am Ende jeder Arbeitssitzung
+- verbindlich dokumentierte Arbeitsweise
+- Git-Workflow als Projektdokument
+- schrittweises Vorgehen (eine Aufgabe, eine Datei)
+- Qualität und Nachvollziehbarkeit als zentrale Entwicklungsprinzipien
+- Aktualisierung der zentralen Projektdokumente auf Version 0.2
 
 ---
 
@@ -146,6 +150,6 @@ Die Arbeitsweise des Projekts wurde definiert:
 
 Das Fundament des Projekts ist gelegt.
 
-Die Vision, die Arbeitsweise und die grundlegenden Architekturprinzipien stehen fest.
+Vision, Projektphilosophie, Dokumentationsstruktur und Arbeitsweise sind dokumentiert und bilden die verbindliche Grundlage für die weitere Entwicklung.
 
-Der nächste Schwerpunkt liegt auf der Ausarbeitung der Projektdokumentation. Nach deren Abschluss beginnt die Entwicklung des Datenmodells und anschließend die technische Umsetzung.
+Der nächste Schwerpunkt liegt auf der Dokumentation der grundlegenden Entscheidungen und der Erstellung des Projektjournals. Anschließend folgen Datenmodell, Architektur und schließlich die technische Umsetzung.

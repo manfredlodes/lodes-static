@@ -3,7 +3,7 @@
 > Ein digitales Archivsystem für Reisen – unabhängig von ihrer Darstellung.
 
 **Dokument:** PROJECT.md  
-**Version:** 0.1  
+**Version:** 0.2  
 **Status:** Aktiv  
 **Letzte Aktualisierung:** 2026-07-19
 
@@ -47,11 +47,16 @@ Alle grundlegenden Entscheidungen orientieren sich an folgenden Prinzipien:
 - Daten vor Darstellung
 - Reisen vor Webseiten
 - Dokumentation vor Implementierung
+- Qualität vor Geschwindigkeit
 - Langfristige Wartbarkeit
 - Nachvollziehbare Architekturentscheidungen
 - Trennung von Inhalt, Logik und Präsentation
 - Minimale technische Abhängigkeiten
 - Erweiterbarkeit ohne grundlegende Änderungen am Datenbestand
+
+Die Entwicklung erfolgt schrittweise. Dokumentation und Implementierung werden gemeinsam weiterentwickelt. Jede Änderung soll nachvollziehbar sein und auf einer dokumentierten Entscheidung beruhen.
+
+Die verbindliche Arbeitsweise für die Projektentwicklung ist im Dokument **GIT_GUIDE.md** beschrieben.
 
 ---
 
@@ -144,6 +149,8 @@ Travel Archive soll:
 
 sein.
 
+Die Projektdokumentation ist Bestandteil der Qualitätssicherung und wird kontinuierlich gepflegt.
+
 ---
 
 # 9. Langfristige Vision
@@ -165,7 +172,27 @@ Das Projekt gilt als erfolgreich, wenn:
 - keine Abhängigkeit mehr von WordPress besteht,
 - sämtliche Daten strukturiert gespeichert sind,
 - das Projekt langfristig wartbar bleibt,
-- weitere Anwendungen auf denselben Daten aufbauen können.
+- weitere Anwendungen auf denselben Daten aufbauen können,
+- Architektur- und Prozessentscheidungen dokumentiert und nachvollziehbar sind.
+
+---
+
+# Zugehörige Projektdokumente
+
+Die wichtigsten Projektdokumente sind:
+
+- PROJECT.md
+- README.md
+- CURRENT_STATUS.md
+- ARCHITECTURE.md
+- DATA_MODEL.md
+- DECISIONS.md
+- ROADMAP.md
+- NEXT_STEPS.md
+- CHANGELOG.md
+- GIT_GUIDE.md
+
+Diese Dokumente bilden gemeinsam die verbindliche Projektdokumentation.
 
 ---
 
