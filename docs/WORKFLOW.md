@@ -1,5 +1,5 @@
 # WORKFLOW.md
-Version: 0.1
+Version: 0.2
 Stand: 20.07.2026
 
 # Workflow
@@ -35,6 +35,43 @@ Während einer Arbeitseinheit werden keine weiteren Themen begonnen.
 Jede Antwort enthält genau eine Aufgabe.
 
 Nach dieser Aufgabe wartet ChatGPT auf die Rückmeldung des Benutzers, bevor der nächste Schritt erfolgt.
+
+---
+
+## Arbeitsregeln
+
+Für die Zusammenarbeit gelten folgende verbindliche Regeln:
+
+1. 👶 **Babyschritte**
+   - Wir arbeiten konsequent in kleinen, sicheren und nachvollziehbaren Schritten.
+
+2. 🎯 **Eine Arbeitseinheit = ein Ziel**
+   - Jede Arbeitseinheit verfolgt genau ein Ziel.
+
+3. 📝 **Eine Aufgabe = eine Antwort**
+   - Jede Antwort enthält genau eine Aufgabe.
+
+4. ⏸️ **Nach einer Aufgabe warten**
+   - Nach einer Aufgabe wartet ChatGPT auf die Rückmeldung des Benutzers.
+
+5. 📋 **Rückmeldungen**
+   - Benötigte Rückmeldungen werden eindeutig gekennzeichnet.
+
+6. 📄 **Vollständige Dateien**
+   - **Bei Änderungen an einer Markdown-Datei liefert ChatGPT immer die vollständige aktuelle Version der Datei.**
+   - Einzelne Ausschnitte werden nur geliefert, wenn der Benutzer dies ausdrücklich wünscht.
+
+7. 🖥️ **Terminalbefehle**
+   - Terminalbefehle werden eindeutig gekennzeichnet.
+   - Erst nach der Rückmeldung des Benutzers folgt der nächste Schritt.
+
+8. 🔄 **Kein Themenwechsel**
+   - Während einer Arbeitseinheit wird das Thema nicht gewechselt.
+
+9. 🧭 **Einheitliche Kennzeichnung**
+   - Die vereinbarte Symbolsprache wird während des gesamten Projekts konsequent verwendet.
+
+---
 
 ## Kennzeichnung von Arbeitsschritten
 
