@@ -1,39 +1,6 @@
+# PROJECT_CHARTER.md
+
 # Project Charter
-
-
-# Project Charter
-
-## Dokumentinformationen
-
-## 1. Vision
-
-## 2. Projektziele
-
-## 3. Projektphilosophie
-
-## 4. Unsere Arbeitsweise
-
-## 5. Entwicklungsprozess
-
-## 6. Entscheidungsprinzipien
-
-## 7. Qualitätsgrundsätze
-
-## 8. Architekturgrundsätze
-
-## 9. Dokumentationsstrategie
-
-## 10. Git-Strategie
-
-## 11. Kommunikation
-
-## 12. Projektorganisation
-
-## 13. Recovery-Strategie
-
-## 14. Geltungsbereich
-
-## Änderungsverlauf
 
 ## Dokumentinformationen
 
@@ -42,346 +9,293 @@
 | Projekt | Travel Archive |
 | Repository | lodes-static |
 | Dokument | PROJECT_CHARTER.md |
-| Version | 0.1.0 |
-| Status | Entwurf |
-| Gültig ab | *(nach Freigabe)* |
+| Version | 1.0.0 |
+| Status | Freigegeben |
+| Gültig ab | 20.07.2026 |
 | Letzte Aktualisierung | 20.07.2026 |
 | Autor | Manfred Lodes |
 | Mitwirkung | ChatGPT (technische und architektonische Beratung) |
 
-### Zweck
+---
 
-Dieses Dokument beschreibt die verbindlichen Grundsätze für die Entwicklung des Projekts **Travel Archive**.
+## Zweck
 
-Es definiert die gemeinsame Arbeitsweise, den Qualitätsanspruch sowie die Prinzipien für Architektur, Dokumentation und Zusammenarbeit.
+Dieses Dokument definiert die langfristigen Grundsätze für das Projekt **Travel Archive**.
 
-Ziel ist es, dass das Projekt jederzeit nachvollziehbar, reproduzierbar und langfristig wartbar bleibt – unabhängig von einzelnen Chats, Computern oder Entwicklungsphasen.
+Es beschreibt die übergeordneten Leitlinien, nach denen das Projekt geplant, entwickelt und weitergeführt wird. Der Project Charter bildet die verbindliche Grundlage für strategische Entscheidungen und stellt sicher, dass die langfristige Ausrichtung des Projekts unabhängig von einzelnen Entwicklungsphasen, Werkzeugen oder technischen Entscheidungen erhalten bleibt.
 
-Dieses Dokument dient als gemeinsame Grundlage für alle zukünftigen Projektentscheidungen.
-
-# 1. Vision
-
-Travel Archive ist mehr als eine Website.
-
-Ziel des Projekts ist der Aufbau eines langfristig nutzbaren digitalen Reisearchivs, in dem Reisen, Orte, Medien und weitere Reiseinformationen dauerhaft strukturiert, nachvollziehbar und unabhängig von einer bestimmten technischen Umsetzung verwaltet werden.
-
-Die Daten bilden den Mittelpunkt des Projekts.
-
-Aus derselben Datenbasis sollen unterschiedliche Anwendungen entstehen können, beispielsweise:
-
-- eine Website,
-- interaktive Karten,
-- Reiseberichte,
-- Druckversionen,
-- Statistiken,
-- Exporte,
-- sowie zukünftige Erweiterungen.
-
-Das Projekt wird so entwickelt, dass es über viele Jahre wartbar, erweiterbar und nachvollziehbar bleibt.
-
-Die Dokumentation ist dabei ein gleichwertiger Bestandteil des Projekts und kein nachträgliches Nebenprodukt.
-
-# 2. Projektziele
-
-Das Projekt verfolgt folgende langfristige Ziele:
-
-## 2.1 Nachhaltigkeit
-
-Das Projekt soll über viele Jahre hinweg gepflegt, erweitert und genutzt werden können.
-
-Kurzfristige Lösungen dürfen die langfristige Wartbarkeit nicht beeinträchtigen.
+Der Project Charter beschreibt bewusst **keine operativen Arbeitsabläufe**. Diese sind im Dokument **WORKING_AGREEMENT.md** festgelegt.
 
 ---
 
-## 2.2 Nachvollziehbarkeit
+## Geltungsbereich
 
-Alle wesentlichen Entscheidungen werden dokumentiert.
-
-Jeder Entwicklungsschritt soll auch nach längerer Zeit nachvollziehbar sein.
+Die in diesem Dokument beschriebenen Grundsätze gelten für das gesamte Projekt **Travel Archive** sowie für alle zukünftigen Erweiterungen, Anwendungen und technischen Umsetzungen, die auf der gemeinsamen Fachdomäne basieren.
 
 ---
 
-## 2.3 Wartbarkeit
+# 1. Rolle des Project Charter
 
-Das Projekt soll übersichtlich aufgebaut sein.
+Der Project Charter definiert die langfristigen Leitlinien des Projekts.
 
-Architektur, Datenmodell und Dokumentation sollen Änderungen und Erweiterungen erleichtern.
+Er beschreibt die strategischen Grundsätze, die unabhängig von Technologien, Entwicklungswerkzeugen oder einzelnen Implementierungen Bestand haben.
 
----
+Die Aufgaben der zentralen Projektdokumente sind klar voneinander abgegrenzt:
 
-## 2.4 Wiederherstellbarkeit
-
-Das Projekt muss jederzeit anhand des Git-Repositories vollständig wiederhergestellt werden können.
-
-Ein neuer Entwicklungsrechner oder ein neuer Chat dürfen keinen Wissensverlust verursachen.
-
----
-
-## 2.5 Qualität
-
-Qualität hat Vorrang vor Geschwindigkeit.
-
-Lieber wenige, gut durchdachte Änderungen als viele schnelle Änderungen.
+| Dokument | Aufgabe |
+|----------|---------|
+| PROJECT.md | beschreibt Vision, Ziele und Umfang des Projekts |
+| PROJECT_CHARTER.md | definiert die langfristigen Projektgrundsätze |
+| WORKING_AGREEMENT.md | beschreibt die tägliche Zusammenarbeit und den Entwicklungsprozess |
+| DECISIONS.md | dokumentiert wesentliche Projektentscheidungen |
+| CURRENT_STATUS.md | beschreibt den aktuellen Projektstand |
+| NEXT_STEPS.md | dokumentiert die nächsten Arbeitsschritte |
 
 ---
 
-## 2.6 Erweiterbarkeit
+# 2. Langfristige Projektprinzipien
 
-Neue Funktionen sollen ergänzt werden können, ohne bestehende Strukturen grundlegend verändern zu müssen.
+## 2.1 Langfristigkeit
 
----
+Travel Archive wird als langfristiges Projekt entwickelt.
 
-## 2.7 Unabhängigkeit
-
-Die Fachdomäne soll unabhängig von einer bestimmten Programmiersprache, Datenbank oder Benutzeroberfläche beschrieben werden.
-
-Technische Entscheidungen dürfen die Fachdomäne nicht bestimmen.
-
-# 3. Projektphilosophie
-
-Die Entwicklung des Travel Archive folgt nicht dem Ziel, möglichst schnell Funktionen bereitzustellen.
-
-Stattdessen wird Wert auf ein stabiles Fundament gelegt, auf dem das Projekt über viele Jahre weiterentwickelt werden kann.
-
-## 3.1 Fachdomäne vor Technik
-
-Die Fachdomäne steht immer an erster Stelle.
-
-Technische Entscheidungen werden erst getroffen, nachdem die fachlichen Anforderungen verstanden und dokumentiert wurden.
+Entscheidungen werden nicht ausschließlich anhand kurzfristiger Anforderungen getroffen, sondern unter Berücksichtigung ihrer Auswirkungen auf die zukünftige Entwicklung des Projekts.
 
 ---
 
-## 3.2 Kleine Schritte
+## 2.2 Nachhaltigkeit
 
-Das Projekt wird konsequent in kleinen, nachvollziehbaren Schritten entwickelt.
+Das Projekt soll über viele Jahre wartbar und erweiterbar bleiben.
 
-Große Sprünge werden vermieden.
-
-Jeder Schritt soll verstanden, überprüft und abgeschlossen sein, bevor der nächste beginnt.
+Kurzfristige Vereinfachungen dürfen die langfristige Qualität des Projekts nicht beeinträchtigen.
 
 ---
 
-## 3.3 Dokumentation als Bestandteil des Projekts
+## 2.3 Fachdomäne vor Technik
 
-Dokumentation ist kein Nebenprodukt.
+Die Fachdomäne bildet den Mittelpunkt des Projekts.
 
-Sie gehört zum Projekt und wird mit derselben Sorgfalt gepflegt wie der Quellcode.
-
----
-
-## 3.4 Langfristiges Denken
-
-Bei Entscheidungen wird nicht nur die aktuelle Anforderung betrachtet.
-
-Es wird immer geprüft, welche Auswirkungen eine Entscheidung auf die zukünftige Entwicklung des Projekts haben kann.
+Technologien, Programmiersprachen und Frameworks dienen ausschließlich der Umsetzung fachlicher Anforderungen und bestimmen niemals die Struktur der Domäne.
 
 ---
 
-## 3.5 Einfachheit
+## 2.4 Daten vor Darstellung
+
+Die Daten bilden den eigentlichen Wert des Projekts.
+
+Unterschiedliche Anwendungen wie Website, Karten, Druckausgaben oder zukünftige Anwendungen greifen auf dieselbe fachliche Datenbasis zurück.
+
+---
+
+## 2.5 Nachvollziehbarkeit
+
+Alle wesentlichen Entscheidungen sollen dauerhaft nachvollziehbar bleiben.
+
+Architektur, Dokumentation und Git-Historie bilden gemeinsam die Grundlage für eine transparente Projektentwicklung.
+
+---
+
+## 2.6 Technologieunabhängigkeit
+
+Die Fachdomäne soll unabhängig von konkreten Technologien beschrieben werden.
+
+Ein Wechsel von Programmiersprachen, Frameworks oder Speichertechnologien darf die fachlichen Modelle nicht verändern.
+
+---
+
+## 2.7 Erweiterbarkeit
+
+Neue Anforderungen sollen durch Erweiterungen umgesetzt werden können, ohne bestehende Strukturen grundlegend verändern zu müssen.
+
+---
+
+# 3. Entwicklungsprinzipien
+
+## 3.1 Domäne vor Implementierung
+
+Die fachliche Problemstellung wird verstanden und modelliert, bevor technische Lösungen entwickelt werden.
+
+---
+
+## 3.2 Iterative Entwicklung
+
+Das Projekt entwickelt sich schrittweise.
+
+Jede Phase baut nachvollziehbar auf der vorherigen auf.
+
+---
+
+## 3.3 Dokumentationsgetriebene Entwicklung
+
+Die Dokumentation begleitet die Entwicklung kontinuierlich.
+
+Sie dient als verbindliche Wissensbasis und wird parallel zur Projektentwicklung gepflegt.
+
+---
+
+## 3.4 Bewusste Entscheidungen
+
+Architektur- und Projektentscheidungen werden nachvollziehbar getroffen und dokumentiert.
+
+Grundlegende Änderungen erfolgen nicht spontan, sondern nach gemeinsamer Bewertung.
+
+---
+
+## 3.5 Kontinuierliche Verbesserung
+
+Bestehende Lösungen dürfen verbessert werden, sofern die Änderungen nachvollziehbar begründet und dokumentiert werden.
+
+---
+
+# 4. Architekturprinzipien
+
+## 4.1 Fachdomäne bestimmt die Architektur
+
+Die Softwarearchitektur folgt der Fachdomäne.
+
+Technische Entscheidungen unterstützen die fachlichen Anforderungen und bestimmen diese nicht.
+
+---
+
+## 4.2 Trennung von Verantwortlichkeiten
+
+Jede Komponente besitzt eine klar definierte Aufgabe.
+
+Verantwortlichkeiten werden bewusst getrennt, um Wartbarkeit und Verständlichkeit zu fördern.
+
+---
+
+## 4.3 Modularität
+
+Das Projekt wird in logisch abgegrenzte Bereiche unterteilt.
+
+Module sollen möglichst unabhängig voneinander entwickelt und erweitert werden können.
+
+---
+
+## 4.4 Einfachheit
 
 Es werden bevorzugt einfache und verständliche Lösungen gewählt.
 
-Komplexität wird nur dann eingeführt, wenn sie einen klaren fachlichen oder technischen Nutzen bietet.
+Komplexität wird nur eingeführt, wenn sie einen klaren fachlichen oder technischen Nutzen besitzt.
 
 ---
 
-## 3.6 Kontinuierliche Verbesserung
+## 4.5 Zukunftsfähigkeit
 
-Das Projekt darf sich weiterentwickeln.
-
-Bestehende Entscheidungen dürfen verbessert werden, wenn eine nachvollziehbare Begründung vorliegt.
-
-Änderungen erfolgen jedoch niemals stillschweigend, sondern werden gemeinsam besprochen und dokumentiert.
+Die Architektur soll zukünftige Erweiterungen ermöglichen, ohne bestehende Strukturen grundlegend verändern zu müssen.
 
 ---
 
-## 3.7 Das Projekt ist die Referenz
+# 5. Qualitätsprinzipien
 
-Alle wesentlichen Informationen gehören in das Projekt selbst.
+## 5.1 Korrektheit
 
-Das Repository ist die maßgebliche Wissensquelle.
-
-Chats, Notizen oder Erinnerungen dürfen niemals die einzige Quelle wichtiger Projektinformationen sein.
-
-# 4. Unsere Arbeitsweise
-
-Die Arbeitsweise ist ein wesentlicher Bestandteil des Projekts.
-
-Sie dient dazu, Entscheidungen nachvollziehbar zu treffen, Fehler frühzeitig zu erkennen und die Komplexität des Projekts dauerhaft beherrschbar zu halten.
-
-## 4.1 Babyschritte
-
-Wir arbeiten konsequent in Babyschritten.
-
-Jeder Entwicklungsschritt soll klein genug sein, um vollständig verstanden, überprüft und abgeschlossen werden zu können.
-
-Erst danach beginnt der nächste Schritt.
+Fachliche und technische Lösungen sollen korrekt, nachvollziehbar und überprüfbar sein.
 
 ---
 
-## 4.2 Eine Aufgabe gleichzeitig
+## 5.2 Wartbarkeit
 
-Es wird immer nur eine Aufgabe gleichzeitig bearbeitet.
+Das Projekt soll langfristig verständlich und pflegbar bleiben.
 
-Größere Vorhaben werden in kleine, unabhängige Teilaufgaben zerlegt.
-
----
-
-## 4.3 Erst verstehen, dann handeln
-
-Vor jeder Entscheidung wird zunächst das Problem verstanden.
-
-Erst danach werden Lösungsalternativen betrachtet und bewertet.
+Strukturen werden so gestaltet, dass spätere Änderungen mit vertretbarem Aufwand möglich sind.
 
 ---
 
-## 4.4 Gemeinsam entscheiden
+## 5.3 Nachvollziehbarkeit
 
-Architektur- und Designentscheidungen werden gemeinsam getroffen.
+Wesentliche Entscheidungen werden dokumentiert.
 
-Vorschläge werden begründet und diskutiert.
-
-Es werden keine grundlegenden Änderungen ohne vorherige Abstimmung vorgenommen.
+Die Entwicklung soll auch nach längerer Zeit nachvollzogen werden können.
 
 ---
 
-## 4.5 Transparenz
+## 5.4 Konsistenz
 
-Jeder Entwicklungsschritt soll nachvollziehbar sein.
-
-Zu jeder wesentlichen Entscheidung soll erkennbar sein:
-
-- warum sie getroffen wurde,
-- welche Alternativen betrachtet wurden,
-- welche Auswirkungen sie hat.
+Architektur, Dokumentation und Implementierung sollen sich gegenseitig widerspruchsfrei ergänzen.
 
 ---
 
-## 4.6 Dokumentation begleiten
+## 5.5 Langlebigkeit
 
-Dokumentation wird nicht am Ende erstellt.
-
-Sie entsteht parallel zur Entwicklung.
-
-Jeder Meilenstein wird dokumentiert.
+Die Projektstruktur soll unabhängig von kurzfristigen Technologien oder Trends Bestand haben.
 
 ---
 
-## 4.7 Git als Meilenstein
+## 5.6 Angemessenheit
 
-Git dient nicht nur der Versionsverwaltung.
+Nicht jede denkbare Erweiterung wird sofort umgesetzt.
 
-Jeder Commit dokumentiert einen fachlich oder technisch abgeschlossenen Entwicklungsschritt.
-
-Die Commit-Historie soll den Entwicklungsverlauf nachvollziehbar widerspiegeln.
+Lösungen sollen dem tatsächlichen Bedarf entsprechen und unnötige Komplexität vermeiden.
 
 ---
 
-## 4.8 Qualität vor Geschwindigkeit
+# 6. Dokumentationsprinzipien
 
-Wir verzichten bewusst auf Abkürzungen, wenn sie die langfristige Qualität des Projekts beeinträchtigen würden.
+## 6.1 Dokumentation als Projektbestandteil
 
-Lieber einen Schritt mehr planen als später umfangreich umbauen.
+Die Dokumentation ist ein gleichwertiger Bestandteil des Projekts.
 
----
-
-## 4.9 Kontinuierliche Reflexion
-
-Während der Entwicklung wird regelmäßig überprüft, ob:
-
-- die bisherige Architektur noch sinnvoll ist,
-- die Dokumentation aktuell ist,
-- neue Erkenntnisse eine Verbesserung ermöglichen.
-
-Verbesserungen sind ausdrücklich erwünscht, erfolgen jedoch kontrolliert und nachvollziehbar.
-
-# 5. Entwicklungsprozess
-
-Der Entwicklungsprozess folgt einer klar definierten Reihenfolge.
-
-Jede Phase baut auf der vorherigen auf.
-
-Ein Schritt wird erst abgeschlossen, bevor der nächste begonnen wird.
+Sie dient nicht nur der Beschreibung des Projekts, sondern ist Teil seiner langfristigen Wartbarkeit.
 
 ---
 
-## 5.1 Fachdomäne verstehen
+## 6.2 Eindeutige Verantwortlichkeiten
 
-Zu Beginn wird ausschließlich die fachliche Problemstellung betrachtet.
+Jedes Dokument besitzt eine klar definierte Aufgabe.
 
-Technische Aspekte spielen in dieser Phase keine Rolle.
-
-Ziel ist ein gemeinsames Verständnis der Domäne.
+Inhalte sollen nicht unnötig mehrfach dokumentiert werden.
 
 ---
 
-## 5.2 Fachliche Fragen klären
+## 6.3 Aktualität
 
-Die Fachdomäne wird durch strukturierte Fragen modelliert.
+Die Dokumentation wird parallel zur Projektentwicklung gepflegt.
 
-Alle wesentlichen Entscheidungen werden dokumentiert.
-
-Offene Punkte bleiben bewusst offen, bis sie fachlich geklärt sind.
+Veraltete Informationen sollen zeitnah aktualisiert oder entfernt werden.
 
 ---
 
-## 5.3 Domänenmodell erstellen
+## 6.4 Nachvollziehbarkeit
 
-Aus den bestätigten Entscheidungen entsteht das fachliche Domänenmodell.
-
-Es beschreibt ausschließlich die Fachlichkeit und enthält keine technischen Details.
+Änderungen an der Dokumentation sollen nachvollziehbar sein und mit den entsprechenden Projektentscheidungen übereinstimmen.
 
 ---
 
-## 5.4 Datenmodell ableiten
+## 6.5 Versionierung
 
-Erst nach Abschluss des Domänenmodells wird das technische Datenmodell entwickelt.
+Die Dokumentation unterliegt derselben Versionsverwaltung wie der Quellcode.
 
-Das Datenmodell folgt der Fachdomäne – niemals umgekehrt.
-
----
-
-## 5.5 Architektur festlegen
-
-Die Softwarearchitektur wird auf Grundlage des Domänen- und Datenmodells entwickelt.
-
-Architekturentscheidungen werden dokumentiert und begründet.
+Sie ist integraler Bestandteil des Git-Repositories.
 
 ---
 
-## 5.6 Implementierung
+# 7. Verbindlichkeit
 
-Die Implementierung erfolgt in kleinen, abgeschlossenen Schritten.
+Die in diesem Dokument beschriebenen Grundsätze bilden den langfristigen Rahmen für die Entwicklung des Projekts.
 
-Jeder Schritt soll verständlich, testbar und nachvollziehbar sein.
+Abweichungen sind möglich, sollen jedoch bewusst entschieden, begründet und dokumentiert werden.
 
----
-
-## 5.7 Dokumentation aktualisieren
-
-Die Dokumentation wird parallel zur Entwicklung gepflegt.
-
-Nach jedem Meilenstein wird geprüft, ob Dokumente aktualisiert werden müssen.
+Grundlegende Änderungen dieses Project Charter erfolgen ausschließlich nach gemeinsamer Bewertung und Aktualisierung der Projektdokumentation.
 
 ---
 
-## 5.8 Qualitätssicherung
+# Verwandte Dokumente
 
-Jeder Entwicklungsschritt wird überprüft.
-
-Dabei werden unter anderem folgende Punkte betrachtet:
-
-- fachliche Korrektheit,
-- Architektur,
-- Verständlichkeit,
-- Wartbarkeit,
-- Konsistenz der Dokumentation.
+- PROJECT.md
+- WORKING_AGREEMENT.md
+- ARCHITECTURE.md
+- DATA_MODEL.md
+- DECISIONS.md
+- CURRENT_STATUS.md
+- NEXT_STEPS.md
 
 ---
 
-## 5.9 Git-Meilenstein
+# Änderungsverlauf
 
-Erst wenn ein Entwicklungsschritt abgeschlossen ist, wird ein Git-Commit erstellt.
-
-Jeder Commit dokumentiert einen nachvollziehbaren Meilenstein des Projekts.
+| Version | Datum | Beschreibung |
+|----------|------------|--------------------------------------------|
+| 1.0.0 | 20.07.2026 | Vollständige Neustrukturierung des Project Charter entsprechend der neuen Dokumentationsarchitektur. |
 

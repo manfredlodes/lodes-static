@@ -1,12 +1,14 @@
+# ARCHITECTURE.md
+
 # Architektur
 
 | Feld | Wert |
 |------|------|
 | Dokument | ARCHITECTURE.md |
-| Version | 0.1 |
-| Status | Entwurf |
+| Version | 1.0.0 |
+| Status | Aktiv |
 | Erstellt | 2026-07-19 |
-| Letzte Aktualisierung | 2026-07-19 |
+| Letzte Aktualisierung | 2026-07-20 |
 | Projekt | Travel Archive |
 
 ---
@@ -15,7 +17,9 @@
 
 Dieses Dokument beschreibt die technische Architektur des Projekts **Travel Archive**.
 
-Es definiert die grundlegende Struktur des Projekts, die Organisation der Dateien und die Trennung zwischen Daten, Medien und Darstellung.
+Es definiert die grundlegende Struktur des Projekts, die Organisation der Dateien sowie die Trennung zwischen Daten, Medien und Präsentation.
+
+Die Architektur bildet die technische Grundlage für alle zukünftigen Erweiterungen des Projekts.
 
 ---
 
@@ -29,12 +33,14 @@ Das Projekt basiert auf folgenden Grundsätzen:
 - Medien werden als Dateien verwaltet
 - HTML, CSS und JavaScript bilden die Präsentationsschicht
 - Inhalte und Darstellung sind vollständig voneinander getrennt
+- Daten sind unabhängig von ihrer Darstellung
+- Erweiterungen erfolgen modular
 
 ---
 
 # Projektstruktur
 
-```
+```text
 lodes-static/
 
 ├── docs/
@@ -64,13 +70,13 @@ lodes-static/
 
 ---
 
-# Schichten
+# Architekturebenen
 
 Die Architektur besteht aus drei logisch getrennten Ebenen.
 
 ## 1. Daten
 
-Enthält ausschließlich Inhalte.
+Diese Ebene enthält ausschließlich strukturierte Informationen.
 
 Beispiele:
 
@@ -78,14 +84,15 @@ Beispiele:
 - Orte
 - Routen
 - Metadaten
+- Referenzen auf Medien
 
-Speicherung ausschließlich als JSON.
+Die Speicherung erfolgt ausschließlich in JSON-Dateien.
 
 ---
 
 ## 2. Medien
 
-Enthält alle Binärdateien.
+Diese Ebene enthält sämtliche Binärdateien.
 
 Beispiele:
 
@@ -95,25 +102,27 @@ Beispiele:
 - KML-Dateien
 - Dokumente
 
-Diese Dateien werden nicht in JSON gespeichert, sondern lediglich referenziert.
+Die Dateien werden außerhalb der JSON-Daten gespeichert und dort lediglich referenziert.
 
 ---
 
 ## 3. Präsentation
 
-Die Website besteht aus:
+Die Präsentation besteht aus:
 
 - HTML
 - CSS
 - JavaScript
 
-Diese Ebene liest die JSON-Dateien und stellt die Inhalte dar.
+Diese Ebene liest die JSON-Dateien und erzeugt daraus die Darstellung im Browser.
+
+Sie enthält keine dauerhaft gespeicherten Inhalte.
 
 ---
 
 # Datenfluss
 
-```
+```text
 JSON-Dateien
         │
         ▼
@@ -136,7 +145,7 @@ Die Website erzeugt ihre Darstellung ausschließlich aus den JSON-Dateien.
 
 Alle Medien werden außerhalb der JSON-Dateien gespeichert.
 
-JSON enthält lediglich Referenzen auf:
+JSON-Dateien enthalten lediglich Referenzen auf:
 
 - Fotos
 - Videos
@@ -144,7 +153,7 @@ JSON enthält lediglich Referenzen auf:
 - KML-Dateien
 - Dokumente
 
-Dadurch bleiben Daten und Dateien sauber getrennt.
+Dadurch bleiben Daten und Binärdateien sauber voneinander getrennt.
 
 ---
 
@@ -152,7 +161,7 @@ Dadurch bleiben Daten und Dateien sauber getrennt.
 
 Die Architektur ist modular aufgebaut.
 
-Neue Bereiche können später ergänzt werden, ohne bestehende Komponenten zu verändern.
+Neue Funktionen können ergänzt werden, ohne bestehende Komponenten grundlegend verändern zu müssen.
 
 Beispiele:
 
@@ -163,6 +172,7 @@ Beispiele:
 - Statistik
 - Mehrsprachigkeit
 - Offline-Unterstützung
+- Weitere Frontends auf derselben Datenbasis
 
 ---
 
@@ -176,10 +186,22 @@ Dadurch bleiben Daten unabhängig von Layout, Design oder technischer Umsetzung.
 
 ---
 
-# Hinweise
+# Beziehungen zu anderen Dokumenten
 
 Dieses Dokument beschreibt ausschließlich die technische Gesamtstruktur des Projekts.
 
-Details zu einzelnen Datenobjekten werden in `DATA_MODEL.md` beschrieben.
+Weitere Informationen befinden sich in:
 
-Projektziele und Arbeitsweise sind in den entsprechenden Dokumenten dokumentiert.
+- PROJECT.md
+- PROJECT_CHARTER.md
+- DATA_MODEL.md
+- DECISIONS.md
+- WORKING_AGREEMENT.md
+
+---
+
+# Ziel
+
+Die Architektur stellt sicher, dass Travel Archive langfristig wartbar, erweiterbar und unabhängig von einzelnen Technologien entwickelt werden kann.
+
+Die Trennung zwischen Daten, Medien und Präsentation bildet dabei das zentrale technische Prinzip des Projekts.

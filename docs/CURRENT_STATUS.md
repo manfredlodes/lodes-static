@@ -1,13 +1,17 @@
+# CURRENT_STATUS.md
+
 # Current Status
+
+## Dokumentinformationen
 
 | Feld | Wert |
 |------|------|
-| Dokument | CURRENT_STATUS.md |
-| Version | 0.3 |
-| Status | Aktiv |
-| Erstellt | 2026-07-19 |
-| Letzte Aktualisierung | 2026-07-19 |
 | Projekt | Travel Archive |
+| Repository | lodes-static |
+| Dokument | CURRENT_STATUS.md |
+| Version | 1.0.0 |
+| Status | Aktiv |
+| Letzte Aktualisierung | 20.07.2026 |
 
 ---
 
@@ -15,90 +19,65 @@
 
 Dieses Dokument beschreibt den aktuellen Stand des Projekts.
 
-Es dient als zentrale Einstiegshilfe für neue Arbeitssitzungen und gibt einen Überblick über den Projektfortschritt, offene Aufgaben und die nächsten geplanten Schritte.
+Es dient als zentrale Einstiegshilfe für neue Arbeitssitzungen und gibt einen Überblick über den Projektfortschritt, den erreichten Meilenstein sowie die nächsten geplanten Arbeitsschritte.
 
 ---
 
 # Projektstatus
 
-Das Projekt befindet sich weiterhin in der Planungs- und Architekturphase.
+**Phase 0 – Dokumentation und Projektgrundlagen – abgeschlossen.**
 
-Die Vision, Zielsetzung, Arbeitsweise sowie die grundlegende Projektarchitektur sind definiert und dokumentiert. Ziel des Projekts ist die Entwicklung eines digitalen Archivsystems für Reisen. Die erste Anwendung dieses Archivsystems wird die Website **lodes.ch** sein.
+Die Projektvision, Dokumentationsarchitektur, Governance, Arbeitsweise sowie die grundlegenden Architekturprinzipien wurden definiert und dokumentiert.
 
-Der Schwerpunkt liegt derzeit auf der fachlichen Modellierung des Systems. Die technische Implementierung beginnt erst, nachdem die konzeptionellen Grundlagen vollständig ausgearbeitet und dokumentiert wurden.
+Das Projekt verfügt nun über eine konsistente Dokumentationsbasis als Grundlage für die weitere Entwicklung.
 
----
-
-# Projektvision
-
-Travel Archive ist ein digitales Archivsystem für Reisen.
-
-Im Mittelpunkt steht die Reise als zentrale Einheit des Systems. Alle weiteren Informationen – beispielsweise Etappen, Fotos, Videos, GPX-Tracks, Karten oder Fahrzeuge – beschreiben oder ergänzen eine Reise.
-
-Die Website dient als Präsentationsschicht dieses Archivsystems.
+Die nächste Projektphase beginnt mit der fachlichen Modellierung der Domäne.
 
 ---
 
-# Aktueller Stand
+# Aktueller Meilenstein
 
-## Abgeschlossen
+## Phase 0 abgeschlossen
 
-- Git-Repository erstellt
-- Projektstruktur angelegt
-- Dokumentationsstruktur definiert
-- README.md erstellt und erweitert
-- PROJECT.md Version 0.2 fertiggestellt
-- CURRENT_STATUS.md aktualisiert
-- DECISIONS.md erstellt
-- DATA_MODEL.md erstellt
-- ARCHITECTURE.md erstellt
-- GIT_GUIDE.md Version 0.4 fertiggestellt
-- PROJECT_JOURNAL.md erstellt
-- CHANGELOG.md erstellt
-- ROADMAP.md entfernt und durch NEXT_STEPS.md ersetzt
-- NEXT_STEPS.md erstellt
-- Grundlegende Projektphilosophie definiert
-- Verbindliche Arbeitsweise dokumentiert
-- Architektur- und Entscheidungsprozess festgelegt
+Folgende Grundlagen wurden geschaffen:
+
+- Projektvision definiert
+- Dokumentationsarchitektur konsolidiert
+- PROJECT_CHARTER.md erstellt
+- WORKING_AGREEMENT.md erstellt
+- Projektgrundsätze dokumentiert
+- Architekturprinzipien definiert
+- Datenmodell vorbereitet
+- Architektur dokumentiert
+- Git-Strategie festgelegt
+- Dokumentationsstruktur vereinheitlicht
 
 ---
 
-# Wichtige Projektentscheidungen
+# Nächste Phase
 
-## Architektur
+## Phase 1 – Domänenmodell
 
-Travel Archive wird als digitales Archivsystem entwickelt.
+Die nächsten Arbeiten konzentrieren sich ausschließlich auf die Fachdomäne.
 
-Die Website ist nicht das eigentliche Projekt, sondern die erste Anwendung des Archivsystems.
+Geplante Arbeitsschritte:
 
-## Datenmodell
+1. Ubiquitous Language entwickeln
+2. Fachbegriffe definieren
+3. Business Rules dokumentieren
+4. TRAVEL_MODEL.md erstellen
+5. DATA_MODEL.md daraus ableiten
 
-Die Reise bildet die zentrale Entität des Systems.
-
-Alle weiteren Daten werden einer Reise oder ihren Bestandteilen zugeordnet.
-
-## Projektphilosophie
-
-- Dokumentation vor Implementierung
-- Daten vor Darstellung
-- Einfachheit vor Komplexität
-- Qualität vor Geschwindigkeit
-- Langfristige Wartbarkeit
-- Entscheidungen werden dokumentiert
-- Entwicklung erfolgt schrittweise
-- Wir entwickeln nichts, bevor wir es verstanden haben.
+Eine technische Implementierung erfolgt erst nach Abschluss dieser Phase.
 
 ---
 
 # Repository
 
-**Name**
-
-`lodes-static`
-
-**Branch**
-
-`main`
+| Bereich | Wert |
+|---------|------|
+| Repository | lodes-static |
+| Branch | main |
 
 ---
 
@@ -106,60 +85,22 @@ Alle weiteren Daten werden einer Reise oder ihren Bestandteilen zugeordnet.
 
 | Dokument | Status |
 |-----------|--------|
-| PROJECT.md | ✅ Version 0.2 |
-| CURRENT_STATUS.md | ✅ Version 0.3 |
-| README.md | ✅ Version 0.3 |
-| NEXT_STEPS.md | ✅ Vorhanden |
-| DECISIONS.md | ✅ Vorhanden |
-| DATA_MODEL.md | ✅ Vorhanden |
-| ARCHITECTURE.md | ✅ Vorhanden |
-| GIT_GUIDE.md | ✅ Version 0.4 |
-| PROJECT_JOURNAL.md | ✅ Version 0.2 |
-| CHANGELOG.md | ✅ Vorhanden |
-
----
-
-# Nächste Schritte
-
-1. Fachlichen Workflow einer Reise modellieren.
-2. Vollständigen Datenfluss vom Import bis zur Veröffentlichung definieren.
-3. Offene fachliche Anforderungen identifizieren und dokumentieren.
-4. Daraus das detaillierte Datenmodell und die Importprozesse ableiten.
-5. Erst anschließend mit der technischen Implementierung beginnen.
-
----
-
-# Offene Grundsatzfragen
-
-Derzeit sind keine offenen Grundsatzentscheidungen vorhanden.
-
-Neue fachliche und architektonische Entscheidungen werden in `DECISIONS.md` dokumentiert.
-
-Regeln zur Arbeitsweise und zum Entwicklungsprozess werden in `GIT_GUIDE.md` gepflegt.
-
----
-
-# Letzte Aktualisierung
-
-Die Projektdokumentation wurde vollständig konsolidiert.
-
-Neu hinzugekommen bzw. aktualisiert wurden insbesondere:
-
-- NEXT_STEPS.md als Nachfolger von ROADMAP.md
-- PROJECT_JOURNAL.md
-- DECISIONS.md
-- DATA_MODEL.md
-- ARCHITECTURE.md
-- Erweiterung des GIT_GUIDE.md um den dokumentierten Entscheidungsprozess
-- Aktualisierung des Dokumentationsstatus
-- Ausrichtung der nächsten Arbeitseinheiten auf die fachliche Modellierung des Travel Archive
+| PROJECT.md | ✅ vorhanden |
+| PROJECT_CHARTER.md | ✅ Version 1.0.0 |
+| WORKING_AGREEMENT.md | ✅ Version 1.0.0 |
+| CURRENT_STATUS.md | ✅ Version 1.0.0 |
+| NEXT_STEPS.md | ⏳ wird als Nächstes aktualisiert |
+| DECISIONS.md | ⏳ wird als Nächstes aktualisiert |
+| ARCHITECTURE.md | ✅ vorhanden |
+| DATA_MODEL.md | ✅ vorhanden |
+| CHANGELOG.md | ✅ vorhanden |
 
 ---
 
 # Zusammenfassung
 
-Das Fundament des Projekts ist abgeschlossen.
+Die Dokumentationsphase bildet das stabile Fundament des Projekts.
 
-Vision, Projektphilosophie, Dokumentationsstruktur, Arbeitsweise, Datenmodell und Architektur bilden die verbindliche Grundlage für die weitere Entwicklung.
+Mit dem Abschluss von Phase 0 verfügt Travel Archive über eine klar strukturierte Projektorganisation, definierte Verantwortlichkeiten der Projektdokumente sowie dokumentierte Grundsätze für Entwicklung, Architektur und Zusammenarbeit.
 
-Die nächste Projektphase beginnt mit der Modellierung des fachlichen Workflows einer Reise. Aus diesem Workflow werden anschließend das detaillierte Datenmodell, die Importprozesse und die technische Umsetzung abgeleitet.
+Die weitere Entwicklung beginnt mit der fachlichen Modellierung der Domäne und erfolgt weiterhin schrittweise entsprechend den festgelegten Projektprinzipien.

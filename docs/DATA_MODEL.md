@@ -1,12 +1,14 @@
+# DATA_MODEL.md
+
 # Datenmodell
 
 | Feld | Wert |
 |------|------|
 | Dokument | DATA_MODEL.md |
-| Version | 0.1 |
-| Status | Entwurf |
+| Version | 1.0.0 |
+| Status | Aktiv |
 | Erstellt | 2026-07-19 |
-| Letzte Aktualisierung | 2026-07-19 |
+| Letzte Aktualisierung | 2026-07-20 |
 | Projekt | Travel Archive |
 
 ---
@@ -15,32 +17,36 @@
 
 Dieses Dokument beschreibt das fachliche Datenmodell des Projekts **Travel Archive**.
 
-Das Datenmodell definiert, welche Informationen dauerhaft gespeichert werden und wie diese logisch zusammengehören.
+Das Datenmodell definiert, welche Informationen dauerhaft gespeichert werden und wie diese logisch zusammenhängen.
 
-Die technische Speicherung (JSON-Dateien, Verzeichnisstruktur usw.) wird in anderen Dokumenten beschrieben.
+Es beschreibt ausschließlich die fachliche Struktur der Daten. Die technische Umsetzung (Dateiformate, JSON-Struktur, Verzeichnisaufbau usw.) wird in der Architektur und den späteren technischen Spezifikationen beschrieben.
 
 ---
 
 # Grundprinzip
 
-Die zentrale Entität des Projekts ist eine **Reise (Trip)**.
+Die zentrale Entität des Projekts ist die **Reise (Trip)**.
 
-Alle weiteren Informationen – beispielsweise Orte, Bilder, GPX-Dateien oder Videos – gehören zu genau einer Reise.
+Alle weiteren Informationen stehen in Beziehung zu genau einer Reise oder können von mehreren Reisen gemeinsam genutzt werden.
 
-```
+Die Reise bildet den fachlichen Mittelpunkt des gesamten Archivsystems.
+
+```text
 Trip
- ├── Orte
- ├── Fotos
- ├── Videos
- ├── GPX-Dateien
- ├── Dokumente
- ├── Notizen
- └── Metadaten
+├── Orte
+├── Fotos
+├── Videos
+├── GPX-Dateien
+├── KML-Dateien
+├── Dokumente
+├── Notizen
+├── Fahrzeuge
+└── Metadaten
 ```
 
 ---
 
-# Entität: Trip
+# Zentrale Entität: Trip
 
 Jede Reise besitzt genau einen Datensatz.
 
@@ -52,7 +58,7 @@ Jede Reise besitzt genau einen Datensatz.
 | title | Titel der Reise |
 | startDate | Startdatum |
 | endDate | Enddatum |
-| status | Planung, abgeschlossen oder laufend |
+| status | Planung, laufend oder abgeschlossen |
 
 ---
 
@@ -71,11 +77,15 @@ Jede Reise besitzt genau einen Datensatz.
 
 Eine Reise kann beliebig viele Medien besitzen.
 
+Beispiele:
+
 - Fotos
 - Videos
 - GPX-Dateien
 - KML-Dateien
 - Dokumente
+
+Die eigentlichen Dateien werden nicht im Datensatz gespeichert, sondern lediglich referenziert.
 
 ---
 
@@ -93,15 +103,30 @@ Ein Ort kann beispielsweise sein:
 - Aussichtspunkt
 - Parkplatz
 - Wanderung
-- Sonstiger POI
+- Sonstiger Point of Interest (POI)
 
-Die genaue Struktur eines Ortes wird in einer späteren Version definiert.
+Die genaue Struktur eines Ortes wird in einer späteren Projektphase definiert.
+
+---
+
+## Fahrzeuge
+
+Eine Reise kann einem oder mehreren Fahrzeugen zugeordnet werden.
+
+Beispiele:
+
+- Wohnmobil
+- Motorrad
+- PKW
+- Fahrrad
+
+Die detaillierte Struktur wird später definiert.
 
 ---
 
 ## Metadaten
 
-Zusätzliche Informationen zur Verwaltung.
+Zusätzliche Verwaltungsinformationen.
 
 | Feld | Beschreibung |
 |------|--------------|
@@ -113,41 +138,25 @@ Zusätzliche Informationen zur Verwaltung.
 
 # Beziehungen
 
-```
+```text
 Trip
 │
 ├── Orte
 ├── Fotos
 ├── Videos
 ├── GPX
+├── KML
 ├── Dokumente
+├── Fahrzeuge
 └── Notizen
 ```
 
-Alle Elemente gehören genau zu einer Reise.
+Alle Elemente gehören logisch zu einer Reise.
+
+In späteren Projektphasen können einzelne Entitäten unabhängig verwaltet und mehreren Reisen zugeordnet werden, sofern dies fachlich sinnvoll ist.
 
 ---
 
 # Erweiterbarkeit
 
-Das Datenmodell wird schrittweise erweitert.
-
-Geplante Entitäten sind beispielsweise:
-
-- Place
-- Media
-- GPX Track
-- Route
-- Person
-- Fahrzeug
-- Unterkunft
-
-Diese werden erst definiert, wenn sie im Projekt benötigt werden.
-
----
-
-# Hinweise
-
-Dieses Dokument beschreibt ausschließlich das fachliche Modell.
-
-Die technische Umsetzung (JSON-Struktur, Dateinamen, Ordnerstruktur und Importprozesse) erfolgt in separaten Dokumenten.
+Das Datenmodell wird schrittweise

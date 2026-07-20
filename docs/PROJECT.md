@@ -1,18 +1,19 @@
+# PROJECT.md
+
 # Travel Archive
 
 > Ein digitales Archivsystem für Reisen – unabhängig von ihrer Darstellung.
 
-**Dokument:** PROJECT.md  
-**Version:** 0.2  
-**Status:** Aktiv  
-**Letzte Aktualisierung:** 2026-07-19
-
-> Dieses Dokument beschreibt die Vision, Ziele und Grundprinzipien des Projekts.
-> Es dient als verbindliche Grundlage für alle Architektur- und Entwicklungsentscheidungen und wird während der gesamten Projektlaufzeit fortgeschrieben.
+| Feld | Wert |
+|------|------|
+| Dokument | PROJECT.md |
+| Version | 1.0.0 |
+| Status | Aktiv |
+| Letzte Aktualisierung | 2026-07-20 |
 
 ---
 
-# 1. Vision
+# Vision
 
 Travel Archive ist ein digitales Archivsystem zur langfristigen Dokumentation, Archivierung und Präsentation von Reisen.
 
@@ -24,7 +25,7 @@ Die Website **lodes.ch** ist die erste Anwendung dieses Archivsystems. Weitere A
 
 ---
 
-# 2. Mission
+# Mission
 
 Ziel des Projekts ist die Entwicklung eines langlebigen, wartbaren und unabhängigen digitalen Archivsystems für Reisen.
 
@@ -34,7 +35,7 @@ Die erste Ausbaustufe ist eine statische Website als Nachfolger der bisherigen W
 
 ---
 
-# 3. Projektphilosophie
+# Projektphilosophie
 
 Travel Archive ist kein Website-Projekt.
 
@@ -56,11 +57,11 @@ Alle grundlegenden Entscheidungen orientieren sich an folgenden Prinzipien:
 
 Die Entwicklung erfolgt schrittweise. Dokumentation und Implementierung werden gemeinsam weiterentwickelt. Jede Änderung soll nachvollziehbar sein und auf einer dokumentierten Entscheidung beruhen.
 
-Die verbindliche Arbeitsweise für die Projektentwicklung ist im Dokument **GIT_GUIDE.md** beschrieben.
+Die verbindliche Arbeitsweise für die Projektentwicklung ist im Dokument **WORKING_AGREEMENT.md** beschrieben.
 
 ---
 
-# 4. Projektziele
+# Projektziele
 
 Das Projekt verfolgt folgende Ziele:
 
@@ -76,7 +77,7 @@ Das Projekt verfolgt folgende Ziele:
 
 ---
 
-# 5. Projektumfang (Scope)
+# Projektumfang (Scope)
 
 Zum Projekt gehören insbesondere:
 
@@ -101,7 +102,7 @@ Weitere Funktionen können später ergänzt werden, sofern sie den Grundprinzipi
 
 ---
 
-# 6. Nicht-Ziele
+# Nicht-Ziele
 
 Bewusst nicht Bestandteil des Projekts sind:
 
@@ -118,7 +119,7 @@ Bewusst nicht Bestandteil des Projekts sind:
 
 ---
 
-# 7. Zielgruppen
+# Zielgruppen
 
 ## Primäre Zielgruppe
 
@@ -134,7 +135,7 @@ Bewusst nicht Bestandteil des Projekts sind:
 
 ---
 
-# 8. Qualitätsziele
+# Qualitätsziele
 
 Travel Archive soll:
 
@@ -153,7 +154,7 @@ Die Projektdokumentation ist Bestandteil der Qualitätssicherung und wird kontin
 
 ---
 
-# 9. Langfristige Vision
+# Langfristige Vision
 
 Travel Archive ist als langfristiges Archivsystem konzipiert.
 
@@ -163,7 +164,7 @@ Der langfristige Wert des Projekts liegt in den archivierten Daten – nicht in 
 
 ---
 
-# 10. Erfolgskriterien
+# Erfolgskriterien
 
 Das Projekt gilt als erfolgreich, wenn:
 
@@ -179,18 +180,17 @@ Das Projekt gilt als erfolgreich, wenn:
 
 # Zugehörige Projektdokumente
 
-Die wichtigsten Projektdokumente sind:
-
-- PROJECT.md
-- README.md
-- CURRENT_STATUS.md
-- ARCHITECTURE.md
-- DATA_MODEL.md
-- DECISIONS.md
-- ROADMAP.md
-- NEXT_STEPS.md
-- CHANGELOG.md
-- GIT_GUIDE.md
+1. START_HERE.md
+2. README.md
+3. PROJECT.md
+4. PROJECT_CHARTER.md
+5. WORKING_AGREEMENT.md
+6. CURRENT_STATUS.md
+7. NEXT_STEPS.md
+8. DECISIONS.md
+9. ARCHITECTURE.md
+10. DATA_MODEL.md
+11. CHANGELOG.md
 
 Diese Dokumente bilden gemeinsam die verbindliche Projektdokumentation.
 

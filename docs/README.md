@@ -1,62 +1,95 @@
+# README.md
+
 # Dokumentation – Travel Archive
+
+## Dokumentinformationen
 
 | Feld | Wert |
 |------|------|
+| Projekt | Travel Archive |
+| Repository | lodes-static |
 | Dokument | README.md |
-| Version | 0.3 |
+| Version | 1.0.0 |
 | Status | Aktiv |
 | Erstellt | 2026-07-19 |
-| Letzte Aktualisierung | 2026-07-19 |
-| Projekt | Travel Archive |
+| Letzte Aktualisierung | 2026-07-20 |
 
 ---
 
 # Zweck
 
-Dieses Verzeichnis enthält die vollständige Projektdokumentation von **Travel Archive**.
+Dieses Verzeichnis enthält die vollständige Projektdokumentation des Projekts **Travel Archive**.
 
-Die Dokumentation beschreibt nicht nur die technische Umsetzung, sondern auch die Vision, die Architektur, die Projektentscheidungen, die Arbeitsweise sowie den aktuellen Entwicklungsstand.
+Die Dokumentation beschreibt sowohl die fachlichen als auch die organisatorischen und technischen Grundlagen des Projekts. Sie bildet die zentrale Wissensbasis für die langfristige Entwicklung des digitalen Reisearchivs.
 
-Ziel ist es, dass das Projekt auch nach längerer Zeit oder durch neue Mitwirkende vollständig nachvollzogen werden kann.
+Ziel ist es, dass das Projekt jederzeit nachvollziehbar, wartbar und unabhängig von einzelnen Chats oder Entwicklungsumgebungen weitergeführt werden kann.
+
+---
+
+# Einstieg
+
+Der Einstieg in das Projekt erfolgt immer über:
+
+> **START_HERE.md**
+
+Dieses Dokument beschreibt die empfohlene Lesereihenfolge und verweist auf die für den aktuellen Projektstand relevanten Dokumente.
 
 ---
 
 # Lesereihenfolge
 
-Für neue Mitwirkende und nach längeren Projektpausen empfiehlt sich folgende Reihenfolge:
-
-1. README.md
+1. START_HERE.md
 2. PROJECT.md
-3. CURRENT_STATUS.md
-4. NEXT_STEPS.md
-5. DECISIONS.md
-6. ARCHITECTURE.md
-7. DATA_MODEL.md
-8. GIT_GUIDE.md
-9. PROJECT_JOURNAL.md
+3. PROJECT_CHARTER.md
+4. WORKING_AGREEMENT.md
+5. CURRENT_STATUS.md
+6. NEXT_STEPS.md
+7. DECISIONS.md
+8. ARCHITECTURE.md
+9. DATA_MODEL.md
 10. CHANGELOG.md
 
 ---
 
 # Dokumentübersicht
 
-## README.md
+## START_HERE.md
 
-Bietet den Einstieg in die Projektdokumentation und erklärt den Aufbau der Dokumente.
+Offizieller Einstiegspunkt in das Projekt.
 
-**Frage:**
+**Frage**
 
-> Wo beginne ich mit dem Projekt?
+> Wo beginne ich?
 
 ---
 
 ## PROJECT.md
 
-Beschreibt Vision, Ziele, Projektumfang und grundlegende Philosophie.
+Beschreibt Vision, Ziele, Projektumfang und den fachlichen Hintergrund.
 
-**Frage:**
+**Frage**
 
 > Was ist Travel Archive?
+
+---
+
+## PROJECT_CHARTER.md
+
+Beschreibt die langfristigen Projektgrundsätze.
+
+**Frage**
+
+> Nach welchen Grundsätzen wird das Projekt entwickelt?
+
+---
+
+## WORKING_AGREEMENT.md
+
+Beschreibt die operative Zusammenarbeit sowie den Entwicklungsprozess.
+
+**Frage**
+
+> Wie arbeiten wir im Projekt?
 
 ---
 
@@ -64,7 +97,7 @@ Beschreibt Vision, Ziele, Projektumfang und grundlegende Philosophie.
 
 Beschreibt den aktuellen Projektstand.
 
-**Frage:**
+**Frage**
 
 > Wo steht das Projekt heute?
 
@@ -72,19 +105,19 @@ Beschreibt den aktuellen Projektstand.
 
 ## NEXT_STEPS.md
 
-Beschreibt den aktuellen Arbeitsplan und die nächsten Entwicklungsschritte.
+Beschreibt die nächsten geplanten Arbeitsschritte.
 
-**Frage:**
+**Frage**
 
-> Woran arbeiten wir als Nächstes?
+> Was passiert als Nächstes?
 
 ---
 
 ## DECISIONS.md
 
-Dokumentiert fachliche, konzeptionelle und architektonische Entscheidungen.
+Dokumentiert grundlegende fachliche, konzeptionelle und architektonische Entscheidungen.
 
-**Frage:**
+**Frage**
 
 > Warum wurde etwas so entschieden?
 
@@ -92,9 +125,9 @@ Dokumentiert fachliche, konzeptionelle und architektonische Entscheidungen.
 
 ## ARCHITECTURE.md
 
-Beschreibt den technischen Aufbau des Systems.
+Beschreibt die Softwarearchitektur.
 
-**Frage:**
+**Frage**
 
 > Wie ist das System aufgebaut?
 
@@ -102,59 +135,39 @@ Beschreibt den technischen Aufbau des Systems.
 
 ## DATA_MODEL.md
 
-Beschreibt die fachliche Struktur der Daten.
+Beschreibt das fachliche Datenmodell.
 
-**Frage:**
+**Frage**
 
 > Welche Informationen verwaltet das Archiv?
 
 ---
 
-## GIT_GUIDE.md
-
-Beschreibt die verbindliche Arbeitsweise, den Git-Workflow und die Regeln für die Zusammenarbeit im Projekt.
-
-**Frage:**
-
-> Wie entwickeln wir Travel Archive?
-
----
-
-## PROJECT_JOURNAL.md
-
-Dokumentiert wichtige Meilensteine und die Entwicklungsgeschichte.
-
-**Frage:**
-
-> Wie hat sich das Projekt entwickelt?
-
----
-
 ## CHANGELOG.md
 
-Dokumentiert Änderungen an der Software.
+Dokumentiert die wesentlichen Änderungen zwischen den Projektversionen.
 
-**Frage:**
+**Frage**
 
-> Was hat sich zwischen den Versionen geändert?
+> Was hat sich geändert?
 
 ---
 
 # Dokumentationsprinzipien
 
-Für die gesamte Dokumentation gelten folgende Grundsätze:
+Für die gesamte Projektdokumentation gelten folgende Grundsätze:
 
-- Jedes Dokument hat einen klar definierten Zweck.
+- Jedes Dokument besitzt genau eine klar definierte Verantwortung.
 - Informationen werden nur an einer Stelle gepflegt.
 - Wichtige Entscheidungen werden dokumentiert.
-- Änderungen sind nachvollziehbar versioniert.
-- Die Dokumentation wird gemeinsam mit der Software weiterentwickelt.
-- Die dokumentierte Arbeitsweise ist Bestandteil der Projektdokumentation.
+- Dokumentation und Quellcode werden gemeinsam versioniert.
+- Die Dokumentation wird kontinuierlich gepflegt.
+- Die Dokumentation ist Bestandteil des Projekts.
 
 ---
 
 # Ziel
 
-Die Dokumentation soll jederzeit den aktuellen Wissensstand des Projekts widerspiegeln und den Einstieg in das Projekt erleichtern.
+Die Dokumentation bildet die verbindliche Wissensbasis des Projekts.
 
-Sie soll sowohl die fachlichen und technischen Entscheidungen als auch den Entwicklungsprozess nachvollziehbar dokumentieren.
+Sie unterstützt die langfristige Wartbarkeit des Travel Archive und ermöglicht es, fachliche, organisatorische und technische Entscheidungen jederzeit nachvollziehen zu können.
