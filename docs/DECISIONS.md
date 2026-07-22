@@ -1,169 +1,99 @@
 # DECISIONS.md
 
-## Dokumentinformationen
-
-| Feld | Wert |
-|------|------|
+| Attribut | Wert |
+|----------|------|
 | Projekt | Travel Archive |
-| Repository | lodes-static |
 | Dokument | DECISIONS.md |
-| Version | 1.0.0 |
+| Version | 2.0.0 |
 | Status | Aktiv |
-| Letzte Aktualisierung | 20.07.2026 |
+| Letzte Aktualisierung | 21.07.2026 |
 
 ---
 
-# Zweck
+# Architektur- und Domänenentscheidungen
 
-Dieses Dokument dokumentiert alle grundlegenden fachlichen, konzeptionellen und architektonischen Entscheidungen des Projekts.
+Dieses Dokument enthält alle grundlegenden fachlichen und technischen Entscheidungen des Projekts.
 
-Jede Entscheidung wird mit ihrer Begründung festgehalten, damit sie dauerhaft nachvollziehbar bleibt.
-
-Regeln zur Zusammenarbeit und zum Entwicklungsprozess werden im Dokument **WORKING_AGREEMENT.md** beschrieben.
+Die Entscheidungen werden chronologisch dokumentiert und nach ihrer Freigabe nicht mehr verändert. Falls sich eine Entscheidung später ändert, wird eine neue Entscheidung ergänzt und auf die vorherige verwiesen.
 
 ---
 
-# Entscheidung 001
+# ADR-001
 
 ## Titel
 
-Travel Archive ist ein digitales Archivsystem.
-
-### Datum
-
-2026-07-19
+Travel Archive ist ein Erinnerungsarchiv.
 
 ### Status
 
-Gültig
+Akzeptiert
+
+### Kontext
+
+Zu Beginn des Projekts wurde Travel Archive als statisches Reisearchiv betrachtet.
+
+Während der Domain Discovery wurde deutlich, dass das eigentliche Ziel nicht die Verwaltung von Reisen, Fotos oder GPX-Dateien ist.
+
+Der fachliche Schwerpunkt liegt auf dem Wiedererleben vergangener Reisen.
 
 ### Entscheidung
 
-Travel Archive wird als digitales Archivsystem entwickelt.
+Travel Archive wird als digitales Erinnerungsarchiv des gemeinsamen Reiselebens entwickelt.
 
-Die Website ist nicht das eigentliche Projekt, sondern die erste Anwendung des Archivsystems.
+Fotos, GPX-Routen, Orte, Regionen und Geschichten werden nicht isoliert betrachtet, sondern als Erinnerungsanker verstanden.
+
+Alle fachlichen Entscheidungen orientieren sich an diesem Grundsatz.
 
 ### Begründung
 
-Die Trennung zwischen Datenbestand und Darstellung ermöglicht eine langfristige Nutzung der archivierten Informationen sowie unterschiedliche zukünftige Anwendungen auf derselben Datenbasis.
+Die Analyse der Domäne hat gezeigt:
+
+- Fotos lösen Erinnerungen aus.
+- GPX-Routen lösen räumliche Erinnerungen aus.
+- Zeit, Orte und Geschichten ergänzen sich gegenseitig.
+- Das eigentliche Ziel besteht darin, Erinnerungen dauerhaft wieder erlebbar zu machen.
+
+### Konsequenzen
+
+- Erinnerungen bilden den fachlichen Kern des Projekts.
+- Die Domäne bestimmt die Architektur.
+- Technische Entscheidungen folgen den fachlichen Anforderungen.
+- Funktionen ohne erkennbaren Erinnerungswert gehören nicht zum Domain Core.
 
 ---
 
-# Entscheidung 002
+# ADR-002
 
 ## Titel
 
-Die Reise ist die zentrale fachliche Entität.
-
-### Datum
-
-2026-07-19
+Domain Discovery vor Architektur und Implementierung.
 
 ### Status
 
-Gültig
+Akzeptiert
+
+### Kontext
+
+Das Projekt soll langfristig wachsen.
+
+Eine vorschnelle technische Umsetzung würde das Risiko erhöhen, die Domäne falsch abzubilden.
 
 ### Entscheidung
 
-Alle Informationen werden einer Reise oder ihren Bestandteilen zugeordnet.
-
-Die Reise bildet den fachlichen Mittelpunkt des gesamten Systems.
+Vor jeder Architektur- oder Implementierungsentscheidung wird zunächst die fachliche Domäne vollständig untersucht und beschrieben.
 
 ### Begründung
 
-Dadurch entsteht ein konsistentes Domänenmodell mit einer klaren fachlichen Struktur.
+Nur ein korrekt verstandenes Domänenmodell ermöglicht eine dauerhaft stabile Architektur.
+
+### Konsequenzen
+
+- Phase 1 konzentriert sich ausschließlich auf die Domäne.
+- Architektur entsteht erst nach Abschluss der Domain Discovery.
+- Implementierungsdetails werden bewusst zurückgestellt.
 
 ---
 
-# Entscheidung 003
+# Weitere Entscheidungen
 
-## Titel
-
-Dokumentation ist Bestandteil der Entwicklung.
-
-### Datum
-
-2026-07-19
-
-### Status
-
-Gültig
-
-### Entscheidung
-
-Dokumentation wird nicht nachträglich erstellt, sondern parallel zur Entwicklung gepflegt.
-
-Grundlegende Entscheidungen werden dokumentiert, bevor sie umgesetzt werden.
-
-### Begründung
-
-Dadurch bleiben Architektur, Ziele und Beweggründe langfristig nachvollziehbar.
-
----
-
-# Entscheidung 004
-
-## Titel
-
-Trennung von Projektgrundsätzen und Arbeitsweise.
-
-### Datum
-
-2026-07-20
-
-### Status
-
-Gültig
-
-### Entscheidung
-
-Langfristige Projektgrundsätze werden im **PROJECT_CHARTER.md** dokumentiert.
-
-Die operative Zusammenarbeit, der Entwicklungsprozess sowie Git-Regeln werden im **WORKING_AGREEMENT.md** dokumentiert.
-
-### Begründung
-
-Die Trennung sorgt für klar abgegrenzte Verantwortlichkeiten der Projektdokumente und vermeidet inhaltliche Überschneidungen.
-
----
-
-# Entscheidung 005
-
-## Titel
-
-Klare Verantwortlichkeiten der Projektdokumente.
-
-### Datum
-
-2026-07-20
-
-### Status
-
-Gültig
-
-### Entscheidung
-
-Jedes Projektdokument besitzt genau eine klar definierte Aufgabe.
-
-Insbesondere gelten folgende Verantwortlichkeiten:
-
-| Dokument | Verantwortung |
-|----------|---------------|
-| PROJECT.md | Vision, Ziele und Projektbeschreibung |
-| PROJECT_CHARTER.md | Langfristige Projektgrundsätze |
-| WORKING_AGREEMENT.md | Operative Zusammenarbeit |
-| CURRENT_STATUS.md | Aktueller Projektstand |
-| NEXT_STEPS.md | Nächste Arbeitsschritte |
-| DECISIONS.md | Grundlegende Entscheidungen |
-
-### Begründung
-
-Eine eindeutige Dokumentationsarchitektur erhöht die Verständlichkeit, reduziert Redundanzen und erleichtert die langfristige Pflege des Projekts.
-
----
-
-# Änderungsverlauf
-
-| Version | Datum | Beschreibung |
-|----------|------------|-----------------------------------------------|
-| 1.0.0 | 20.07.2026 | Dokument auf neue Dokumentationsarchitektur angepasst; Entscheidungen 004 und 005 aktualisiert bzw. ergänzt. |
+Weitere Architektur- und Domänenentscheidungen werden im Verlauf des Projekts fortlaufend ergänzt.

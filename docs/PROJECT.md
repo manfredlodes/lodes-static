@@ -1,201 +1,116 @@
 # PROJECT.md
 
+| Attribut | Wert |
+|----------|------|
+| Projekt | Travel Archive |
+| Dokument | PROJECT.md |
+| Version | 2.0.0 |
+| Status | Aktiv |
+| Phase | 1 – Domain Discovery |
+| Letzte Aktualisierung | 21.07.2026 |
+
+---
+
 # Travel Archive
 
-> Ein digitales Archivsystem für Reisen – unabhängig von ihrer Darstellung.
+## Vision
 
-| Feld | Wert |
-|------|------|
-| Dokument | PROJECT.md |
-| Version | 1.0.0 |
-| Status | Aktiv |
-| Letzte Aktualisierung | 2026-07-20 |
+Travel Archive ist ein digitales Erinnerungsarchiv unseres gemeinsamen Reiselebens.
 
----
+Das Projekt bewahrt nicht nur Informationen über Reisen, sondern die Erinnerungen, die mit ihnen verbunden sind.
 
-# Vision
+Fotos, Routen, Orte und Geschichten werden miteinander verbunden, damit vergangene Reisen auch nach vielen Jahren wieder erlebt werden können.
 
-Travel Archive ist ein digitales Archivsystem zur langfristigen Dokumentation, Archivierung und Präsentation von Reisen.
-
-Im Mittelpunkt stehen nicht Webseiten, sondern die Reisen selbst mit allen dazugehörigen Informationen. Dazu gehören unter anderem Reiseberichte, Fotos, Videos, GPX-Dateien, KML-Dateien, Karten, Fahrzeuge, Orte sowie weitere strukturierte Metadaten.
-
-Das Archiv bildet den zentralen Kern des Projekts. Anwendungen greifen auf diese Daten zu und präsentieren sie in geeigneter Form.
-
-Die Website **lodes.ch** ist die erste Anwendung dieses Archivsystems. Weitere Anwendungen können künftig ergänzt werden, ohne die zugrunde liegenden Daten verändern zu müssen.
+Travel Archive dokumentiert Reisen nicht nur – es macht Erinnerungen wieder lebendig.
 
 ---
 
-# Mission
+## Warum dieses Projekt entstanden ist
 
-Ziel des Projekts ist die Entwicklung eines langlebigen, wartbaren und unabhängigen digitalen Archivsystems für Reisen.
+Dieses Projekt ist über viele Jahre gewachsen.
 
-Travel Archive soll sämtliche Informationen einer Reise dauerhaft speichern, strukturiert verwalten und unabhängig von einer bestimmten Technologie oder Darstellungsform nutzbar machen.
+Den Anfang machten unsere Fotos. Beim Betrachten der Fotomediathek wurden Erinnerungen an vergangene Reisen wieder lebendig.
 
-Die erste Ausbaustufe ist eine statische Website als Nachfolger der bisherigen WordPress-Website. Das Archiv selbst bleibt jedoch unabhängig von seiner jeweiligen Präsentation.
+Später kamen GPX-Tracks hinzu. Durch die Darstellung unserer gefahrenen Routen in Google Earth entstand eine zweite Form der Erinnerung. Nicht nur einzelne Fotos, sondern ganze Reiseverläufe konnten erneut nachvollzogen werden.
 
----
+Mit der bestehenden Website wurden Reisen erstmals zusammenhängend dokumentiert.
 
-# Projektphilosophie
-
-Travel Archive ist kein Website-Projekt.
-
-Travel Archive ist ein digitales Archivsystem.
-
-Die Daten stehen im Mittelpunkt. Anwendungen greifen auf diese Daten zu und stellen sie in geeigneter Form dar.
-
-Alle grundlegenden Entscheidungen orientieren sich an folgenden Prinzipien:
-
-- Daten vor Darstellung
-- Reisen vor Webseiten
-- Dokumentation vor Implementierung
-- Qualität vor Geschwindigkeit
-- Langfristige Wartbarkeit
-- Nachvollziehbare Architekturentscheidungen
-- Trennung von Inhalt, Logik und Präsentation
-- Minimale technische Abhängigkeiten
-- Erweiterbarkeit ohne grundlegende Änderungen am Datenbestand
-
-Die Entwicklung erfolgt schrittweise. Dokumentation und Implementierung werden gemeinsam weiterentwickelt. Jede Änderung soll nachvollziehbar sein und auf einer dokumentierten Entscheidung beruhen.
-
-Die verbindliche Arbeitsweise für die Projektentwicklung ist im Dokument **WORKING_AGREEMENT.md** beschrieben.
+Travel Archive führt diese Entwicklung konsequent weiter. Ziel ist es, Fotos, Routen, Orte und Geschichten in einem gemeinsamen Erinnerungsarchiv zusammenzuführen.
 
 ---
 
-# Projektziele
+## Projektziel
 
-Das Projekt verfolgt folgende Ziele:
+Travel Archive soll ein langfristiges digitales Archiv unseres gemeinsamen Reiselebens werden.
 
-- Langfristige Archivierung aller Reisen
-- Einheitliche Struktur sämtlicher Reisedaten
-- Unabhängigkeit von WordPress
-- Hohe Performance
-- Einfache Pflege neuer Reisen
-- Moderne und responsive Benutzeroberfläche
-- Nachhaltige Softwarearchitektur
-- Vollständige Projektdokumentation
-- Langfristige Erweiterbarkeit
+Es soll Erinnerungen bewahren, Zusammenhänge sichtbar machen und vergangene Reisen jederzeit wieder erlebbar machen.
+
+Das Projekt entsteht in erster Linie für den persönlichen Gebrauch und orientiert sich konsequent an unserer eigenen Art zu reisen und Erinnerungen zu erleben.
 
 ---
 
-# Projektumfang (Scope)
+## Leitprinzip
 
-Zum Projekt gehören insbesondere:
+Bei jeder fachlichen Entscheidung wird dieselbe Frage gestellt:
 
-- Reisen
-- Reiseetappen
-- Reiseberichte
-- Fotos
-- Videos
-- GPX-Dateien
-- KML-Dateien
-- Karten
-- Fahrzeuge
-- Länder
-- Regionen
-- Orte
-- Downloads
-- Suchfunktion
-- Responsive Website
-- Suchmaschinenoptimierung (SEO)
+> Trägt diese Funktion dazu bei, Erinnerungen wieder erlebbar zu machen?
 
-Weitere Funktionen können später ergänzt werden, sofern sie den Grundprinzipien des Projekts entsprechen.
+Nur wenn diese Frage mit **Ja** beantwortet werden kann, gehört sie zum fachlichen Kern des Projekts.
 
 ---
 
-# Nicht-Ziele
+## Projektphasen
 
-Bewusst nicht Bestandteil des Projekts sind:
+### Phase 0
 
-- WordPress als zukünftige Plattform
-- Benutzerverwaltung
-- Kommentarfunktion
-- Forum
-- Social Network
-- Online-Shop
-- Werbung
-- Komplexes Content-Management-System
-- Verpflichtende Datenbank
-- Cloud-Abhängigkeit
+Projektinitialisierung und Grundlagen.
 
----
+**Status:** Abgeschlossen.
 
-# Zielgruppen
+### Phase 1
 
-## Primäre Zielgruppe
+Domain Discovery.
 
-- Betreiber und Autoren des Archivs
+Verstehen der Domäne und Entwicklung einer gemeinsamen Fachsprache.
 
-## Sekundäre Zielgruppen
+**Status:** Aktiv.
 
-- Familie
-- Freunde
-- Motorradreisende
-- Wohnmobilreisende
-- Reiseinteressierte Besucher
+### Phase 2
 
----
+Domänenmodell und Softwarearchitektur.
 
-# Qualitätsziele
+### Phase 3
 
-Travel Archive soll:
+Implementierung.
 
-- schnell
-- stabil
-- wartbar
-- nachvollziehbar dokumentiert
-- erweiterbar
-- responsiv
-- suchmaschinenfreundlich
-- barrierearm
+### Phase 4
 
-sein.
+Migration der bestehenden Inhalte.
 
-Die Projektdokumentation ist Bestandteil der Qualitätssicherung und wird kontinuierlich gepflegt.
+### Phase 5
+
+Langfristige Weiterentwicklung.
 
 ---
 
-# Langfristige Vision
+## Zugehörige Dokumente
 
-Travel Archive ist als langfristiges Archivsystem konzipiert.
+Dieses Dokument beschreibt Vision und Ziel des Projekts.
 
-Neue Reisen, Fahrzeuge, Medien und zukünftige Funktionen sollen ergänzt werden können, ohne bestehende Daten oder deren Struktur grundlegend verändern zu müssen.
+Weitere Informationen befinden sich in den folgenden Dokumenten:
 
-Der langfristige Wert des Projekts liegt in den archivierten Daten – nicht in einer bestimmten Technologie oder Website.
-
----
-
-# Erfolgskriterien
-
-Das Projekt gilt als erfolgreich, wenn:
-
-- alle Reisen dauerhaft archiviert werden können,
-- neue Reisen einfach ergänzt werden können,
-- keine Abhängigkeit mehr von WordPress besteht,
-- sämtliche Daten strukturiert gespeichert sind,
-- das Projekt langfristig wartbar bleibt,
-- weitere Anwendungen auf denselben Daten aufbauen können,
-- Architektur- und Prozessentscheidungen dokumentiert und nachvollziehbar sind.
+- CURRENT_STATUS.md
+- ARCHITECTURE.md
+- DECISIONS.md
+- DATA_MODEL.md
+- ROADMAP.md
+- WORKFLOW.md
+- CHANGELOG.md
 
 ---
 
-# Zugehörige Projektdokumente
+## Schlussgedanke
 
-1. START_HERE.md
-2. README.md
-3. PROJECT.md
-4. PROJECT_CHARTER.md
-5. WORKING_AGREEMENT.md
-6. CURRENT_STATUS.md
-7. NEXT_STEPS.md
-8. DECISIONS.md
-9. ARCHITECTURE.md
-10. DATA_MODEL.md
-11. CHANGELOG.md
+Travel Archive ist mehr als eine Website.
 
-Diese Dokumente bilden gemeinsam die verbindliche Projektdokumentation.
-
----
-
-# Leitsatz
-
-> **Die Reise ist die zentrale Entität des Systems. Alles andere beschreibt, dokumentiert oder ergänzt sie.**
+Es ist der Versuch, unser gemeinsames Reiseleben dauerhaft zu bewahren und Erinnerungen auch nach vielen Jahren wieder lebendig werden zu lassen.

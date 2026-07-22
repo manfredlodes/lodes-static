@@ -1,95 +1,101 @@
 # WORKFLOW.md
-Version: 0.2
-Stand: 20.07.2026
+
+| Attribut | Wert |
+|----------|------|
+| Projekt | Travel Archive |
+| Dokument | WORKFLOW.md |
+| Version | 2.0.0 |
+| Status | Aktiv |
+| Letzte Aktualisierung | 21.07.2026 |
+
+---
 
 # Workflow
 
-## Zweck dieses Dokuments
+Dieses Dokument beschreibt die verbindliche Arbeitsweise für das Projekt Travel Archive.
 
-Dieses Dokument beschreibt die Regeln für die Zusammenarbeit am Projekt **Travel Archive**.
-
-Es definiert unsere gemeinsame Arbeitsweise, damit alle Arbeitsschritte nachvollziehbar, reproduzierbar und konsistent durchgeführt werden.
-
-Der Workflow ist unabhängig vom eigentlichen Projektinhalt und gilt für die gesamte Entwicklungsdauer.
+Ziel ist eine nachvollziehbare, qualitativ hochwertige und langfristig wartbare Projektentwicklung.
 
 ---
 
-## Grundprinzipien
+# Grundprinzipien
 
-### 1. Babyschritte
+## Schritt für Schritt
 
-Wir arbeiten konsequent in kleinen, sicheren und nachvollziehbaren Schritten.
+Es wird immer nur ein fachlicher oder technischer Schritt gleichzeitig bearbeitet.
 
-Lieber viele kleine Arbeitsschritte als wenige große.
-
-Jeder Schritt soll verständlich, überprüfbar und bei Bedarf leicht korrigierbar sein.
-
-### 2. Eine Arbeitseinheit = ein Ziel
-
-Jede Arbeitseinheit verfolgt genau ein Ziel.
-
-Während einer Arbeitseinheit werden keine weiteren Themen begonnen.
-
-### 3. Eine Aufgabe = eine Antwort
-
-Jede Antwort enthält genau eine Aufgabe.
-
-Nach dieser Aufgabe wartet ChatGPT auf die Rückmeldung des Benutzers, bevor der nächste Schritt erfolgt.
+Größere Änderungen werden bewusst in kleine, nachvollziehbare Arbeitsschritte zerlegt.
 
 ---
 
-## Arbeitsregeln
+## Eine Datei nach der anderen
 
-Für die Zusammenarbeit gelten folgende verbindliche Regeln:
+Es wird immer nur eine Dokumentationsdatei oder eine Quelldatei vollständig bearbeitet.
 
-1. 👶 **Babyschritte**
-   - Wir arbeiten konsequent in kleinen, sicheren und nachvollziehbaren Schritten.
-
-2. 🎯 **Eine Arbeitseinheit = ein Ziel**
-   - Jede Arbeitseinheit verfolgt genau ein Ziel.
-
-3. 📝 **Eine Aufgabe = eine Antwort**
-   - Jede Antwort enthält genau eine Aufgabe.
-
-4. ⏸️ **Nach einer Aufgabe warten**
-   - Nach einer Aufgabe wartet ChatGPT auf die Rückmeldung des Benutzers.
-
-5. 📋 **Rückmeldungen**
-   - Benötigte Rückmeldungen werden eindeutig gekennzeichnet.
-
-6. 📄 **Vollständige Dateien**
-   - **Bei Änderungen an einer Markdown-Datei liefert ChatGPT immer die vollständige aktuelle Version der Datei.**
-   - Einzelne Ausschnitte werden nur geliefert, wenn der Benutzer dies ausdrücklich wünscht.
-
-7. 🖥️ **Terminalbefehle**
-   - Terminalbefehle werden eindeutig gekennzeichnet.
-   - Erst nach der Rückmeldung des Benutzers folgt der nächste Schritt.
-
-8. 🔄 **Kein Themenwechsel**
-   - Während einer Arbeitseinheit wird das Thema nicht gewechselt.
-
-9. 🧭 **Einheitliche Kennzeichnung**
-   - Die vereinbarte Symbolsprache wird während des gesamten Projekts konsequent verwendet.
+Erst wenn diese abgeschlossen und gespeichert wurde, beginnt die Arbeit an der nächsten Datei.
 
 ---
 
-## Kennzeichnung von Arbeitsschritten
+## Vollständige Dateien
 
-Zur besseren Orientierung verwenden wir in unseren Antworten eine einheitliche Kennzeichnung.
+Dokumente werden grundsätzlich vollständig erstellt oder überarbeitet.
 
-| Symbol | Bedeutung |
-|:------:|-----------|
-| 🎯 | Ziel der aktuellen Arbeitseinheit |
-| 📄 | Datei zum Speichern |
-| 🖥️ | Im Terminal eingeben |
-| 📋 | Rückmeldung im Chat einfügen |
-| ✅ | Erwartetes Ergebnis oder Kontrolle |
-| 🟦 | Fachliche Frage |
-| 🟨 | Erläuterung |
-| 🟩 | Antwort oder Entscheidung des Benutzers |
-| 🟪 | Schlussfolgerung oder Entscheidung von ChatGPT |
-| 🟥 | Offene Punkte oder noch zu klärende Themen |
-| 💡 | Idee oder Empfehlung |
-| ⚠️ | Achtung oder Besonderheit |
+Es werden keine unvollständigen Ausschnitte oder Teiländerungen gespeichert.
 
-Diese Kennzeichnungen werden während des gesamten Projekts konsequent verwendet.
+Jede Datei stellt einen konsistenten Stand des Projekts dar.
+
+---
+
+## Benutzer bestätigt jeden Schritt
+
+Der Ablauf erfolgt immer nach demselben Muster:
+
+1. ChatGPT erstellt eine vollständige Datei.
+2. Der Benutzer speichert die Datei im Projekt.
+3. Der Benutzer bestätigt den Abschluss (z. B. mit „bereit“ oder „weiter“).
+4. Erst danach beginnt die nächste Datei.
+
+---
+
+## Domain First
+
+Während der Domain Discovery werden ausschließlich fachliche Fragen behandelt.
+
+Technische Lösungen werden bewusst zurückgestellt.
+
+---
+
+## Entscheidungen dokumentieren
+
+Wichtige fachliche oder technische Entscheidungen werden in `DECISIONS.md` dokumentiert.
+
+Entscheidungen werden nicht stillschweigend geändert.
+
+---
+
+## Versionsverwaltung
+
+Jede überarbeitete Datei erhält eine neue Versionsnummer.
+
+Vor größeren Überarbeitungen wird der vorherige Dokumentationsstand archiviert.
+
+---
+
+## Git
+
+Größere abgeschlossene Arbeitspakete werden durch einen eigenen Git-Commit abgeschlossen.
+
+Die Commit-Nachrichten beschreiben den fachlichen Inhalt der Änderung.
+
+---
+
+## Ziel
+
+Die Dokumentation soll jederzeit den aktuellen Projektstand widerspiegeln.
+
+Ein neuer Projektbeteiligter soll anhand der Dokumentation nachvollziehen können,
+
+- warum das Projekt existiert,
+- welche Entscheidungen getroffen wurden,
+- wie gearbeitet wird,
+- und an welchem Punkt sich das Projekt aktuell befindet.

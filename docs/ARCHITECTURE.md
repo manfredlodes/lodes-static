@@ -1,207 +1,124 @@
 # ARCHITECTURE.md
 
-# Architektur
-
-| Feld | Wert |
-|------|------|
-| Dokument | ARCHITECTURE.md |
-| Version | 1.0.0 |
-| Status | Aktiv |
-| Erstellt | 2026-07-19 |
-| Letzte Aktualisierung | 2026-07-20 |
+| Attribut | Wert |
+|----------|------|
 | Projekt | Travel Archive |
+| Dokument | ARCHITECTURE.md |
+| Version | 2.0.0 |
+| Status | Aktiv |
+| Phase | 1 – Domain Discovery |
+| Letzte Aktualisierung | 21.07.2026 |
 
 ---
 
-# Zweck
+# Architektur
 
-Dieses Dokument beschreibt die technische Architektur des Projekts **Travel Archive**.
+## Zweck dieses Dokuments
 
-Es definiert die grundlegende Struktur des Projekts, die Organisation der Dateien sowie die Trennung zwischen Daten, Medien und Präsentation.
+Dieses Dokument beschreibt die fachliche und technische Architektur des Projekts.
 
-Die Architektur bildet die technische Grundlage für alle zukünftigen Erweiterungen des Projekts.
+Während der aktuellen Projektphase (Domain Discovery) werden ausschließlich fachliche Grundlagen dokumentiert.
+
+Technische Architekturentscheidungen erfolgen erst nach Abschluss der fachlichen Modellierung.
 
 ---
 
 # Architekturprinzipien
 
-Das Projekt basiert auf folgenden Grundsätzen:
+Die Architektur von Travel Archive orientiert sich konsequent an der Domäne.
 
-- Statische Website
-- Keine Datenbank
-- Inhalte werden in JSON-Dateien gespeichert
-- Medien werden als Dateien verwaltet
-- HTML, CSS und JavaScript bilden die Präsentationsschicht
-- Inhalte und Darstellung sind vollständig voneinander getrennt
-- Daten sind unabhängig von ihrer Darstellung
-- Erweiterungen erfolgen modular
+Nicht technische Möglichkeiten bestimmen die Architektur, sondern das Verständnis der fachlichen Zusammenhänge.
+
+Die Architektur soll die Domäne möglichst direkt und verständlich abbilden.
 
 ---
 
-# Projektstruktur
+# Domain First
 
-```text
-lodes-static/
+Die Domäne besitzt Vorrang vor der Technik.
 
-├── docs/
-│
-├── data/
-│   ├── trips/
-│   ├── places/
-│   ├── routes/
-│   └── media/
-│
-├── assets/
-│   ├── images/
-│   ├── videos/
-│   ├── gpx/
-│   ├── kml/
-│   ├── icons/
-│   └── css/
-│
-├── js/
-│
-├── pages/
-│
-├── index.html
-│
-└── README.md
-```
+Die Reihenfolge lautet grundsätzlich:
+
+1. Domäne verstehen
+2. Fachliches Modell entwickeln
+3. Architektur ableiten
+4. Implementieren
+
+Diese Reihenfolge wird während des gesamten Projekts eingehalten.
 
 ---
 
-# Architekturebenen
+# Domain Core
 
-Die Architektur besteht aus drei logisch getrennten Ebenen.
+Der Domain Core des Projekts besteht darin, Erinnerungen an das gemeinsame Reiseleben wieder erlebbar zu machen.
 
-## 1. Daten
+Alle fachlichen Elemente unterstützen dieses Ziel.
 
-Diese Ebene enthält ausschließlich strukturierte Informationen.
-
-Beispiele:
+Hierzu gehören insbesondere:
 
 - Reisen
+- Etappen
+- Regionen
+- Aufenthalte
 - Orte
-- Routen
-- Metadaten
-- Referenzen auf Medien
+- Tagestouren
+- Erinnerungen
+- Erinnerungsanker
+- Geschichten
 
-Die Speicherung erfolgt ausschließlich in JSON-Dateien.
-
----
-
-## 2. Medien
-
-Diese Ebene enthält sämtliche Binärdateien.
-
-Beispiele:
-
-- Fotos
-- Videos
-- GPX-Dateien
-- KML-Dateien
-- Dokumente
-
-Die Dateien werden außerhalb der JSON-Daten gespeichert und dort lediglich referenziert.
+Die genaue Definition dieser Begriffe entsteht während der Domain Discovery.
 
 ---
 
-## 3. Präsentation
+# Architekturziele
 
-Die Präsentation besteht aus:
+Die spätere Architektur soll folgende Eigenschaften besitzen:
 
-- HTML
-- CSS
-- JavaScript
-
-Diese Ebene liest die JSON-Dateien und erzeugt daraus die Darstellung im Browser.
-
-Sie enthält keine dauerhaft gespeicherten Inhalte.
-
----
-
-# Datenfluss
-
-```text
-JSON-Dateien
-        │
-        ▼
-JavaScript
-        │
-        ▼
-HTML
-        │
-        ▼
-Browser
-```
-
-Die Daten bleiben unverändert.
-
-Die Website erzeugt ihre Darstellung ausschließlich aus den JSON-Dateien.
+- einfach verständlich
+- klar strukturiert
+- langfristig wartbar
+- leicht erweiterbar
+- unabhängig von einzelnen Frameworks
+- möglichst geringe technische Komplexität
 
 ---
 
-# Medienverwaltung
+# Technische Leitlinien
 
-Alle Medien werden außerhalb der JSON-Dateien gespeichert.
+Zum jetzigen Zeitpunkt werden bewusst noch keine Entscheidungen getroffen bezüglich:
 
-JSON-Dateien enthalten lediglich Referenzen auf:
+- Programmiersprache
+- Frameworks
+- Datenhaltung
+- Verzeichnisstruktur
+- Build-Prozess
+- Deployment
 
-- Fotos
-- Videos
-- GPX-Dateien
-- KML-Dateien
-- Dokumente
-
-Dadurch bleiben Daten und Binärdateien sauber voneinander getrennt.
-
----
-
-# Erweiterbarkeit
-
-Die Architektur ist modular aufgebaut.
-
-Neue Funktionen können ergänzt werden, ohne bestehende Komponenten grundlegend verändern zu müssen.
-
-Beispiele:
-
-- Kartenansicht
-- Suche
-- Volltextsuche
-- Timeline
-- Statistik
-- Mehrsprachigkeit
-- Offline-Unterstützung
-- Weitere Frontends auf derselben Datenbasis
+Diese Entscheidungen folgen erst aus dem abgeschlossenen Domänenmodell.
 
 ---
 
-# Grundsatz
+# Aktueller Stand
 
-Die Architektur folgt dem Prinzip:
+Die Architektur befindet sich derzeit in der fachlichen Vorbereitungsphase.
 
-> **Inhalte werden einmal gepflegt und können auf beliebige Weise dargestellt werden.**
+Der Schwerpunkt liegt auf dem Verständnis der Domäne.
 
-Dadurch bleiben Daten unabhängig von Layout, Design oder technischer Umsetzung.
-
----
-
-# Beziehungen zu anderen Dokumenten
-
-Dieses Dokument beschreibt ausschließlich die technische Gesamtstruktur des Projekts.
-
-Weitere Informationen befinden sich in:
-
-- PROJECT.md
-- PROJECT_CHARTER.md
-- DATA_MODEL.md
-- DECISIONS.md
-- WORKING_AGREEMENT.md
+Die technische Architektur wird in Phase 2 entwickelt.
 
 ---
 
-# Ziel
+# Ausblick
 
-Die Architektur stellt sicher, dass Travel Archive langfristig wartbar, erweiterbar und unabhängig von einzelnen Technologien entwickelt werden kann.
+Nach Abschluss der Domain Discovery wird dieses Dokument schrittweise erweitert.
 
-Die Trennung zwischen Daten, Medien und Präsentation bildet dabei das zentrale technische Prinzip des Projekts.
+Geplant sind unter anderem:
+
+- Systemübersicht
+- Architekturprinzipien
+- Schichtenmodell
+- Komponentenmodell
+- Datenfluss
+- Projektstruktur
+- Erweiterungskonzept
+- Qualitätsziele

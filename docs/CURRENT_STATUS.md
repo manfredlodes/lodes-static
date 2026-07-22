@@ -1,106 +1,102 @@
 # CURRENT_STATUS.md
 
-# Current Status
-
-## Dokumentinformationen
-
-| Feld | Wert |
-|------|------|
+| Attribut | Wert |
+|----------|------|
 | Projekt | Travel Archive |
-| Repository | lodes-static |
 | Dokument | CURRENT_STATUS.md |
-| Version | 1.0.0 |
+| Version | 2.0.0 |
 | Status | Aktiv |
-| Letzte Aktualisierung | 20.07.2026 |
+| Phase | 1 – Domain Discovery |
+| Letzte Aktualisierung | 21.07.2026 |
 
 ---
 
-# Zweck
+# Aktueller Projektstatus
 
-Dieses Dokument beschreibt den aktuellen Stand des Projekts.
+## Gesamtstatus
 
-Es dient als zentrale Einstiegshilfe für neue Arbeitssitzungen und gibt einen Überblick über den Projektfortschritt, den erreichten Meilenstein sowie die nächsten geplanten Arbeitsschritte.
+Das Projekt befindet sich in **Phase 1 – Domain Discovery**.
 
----
-
-# Projektstatus
-
-**Phase 0 – Dokumentation und Projektgrundlagen – abgeschlossen.**
-
-Die Projektvision, Dokumentationsarchitektur, Governance, Arbeitsweise sowie die grundlegenden Architekturprinzipien wurden definiert und dokumentiert.
-
-Das Projekt verfügt nun über eine konsistente Dokumentationsbasis als Grundlage für die weitere Entwicklung.
-
-Die nächste Projektphase beginnt mit der fachlichen Modellierung der Domäne.
+In dieser Phase wird die fachliche Domäne untersucht und verstanden. Ziel ist es, eine gemeinsame Fachsprache (Ubiquitous Language) zu entwickeln und die tatsächlichen Zusammenhänge der Domäne zu erkennen, bevor Entscheidungen über Architektur oder Implementierung getroffen werden.
 
 ---
 
-# Aktueller Meilenstein
+# Aktuelle Arbeiten
 
-## Phase 0 abgeschlossen
+Der Schwerpunkt liegt derzeit ausschließlich auf der fachlichen Analyse.
 
-Folgende Grundlagen wurden geschaffen:
-
-- Projektvision definiert
-- Dokumentationsarchitektur konsolidiert
-- PROJECT_CHARTER.md erstellt
-- WORKING_AGREEMENT.md erstellt
-- Projektgrundsätze dokumentiert
-- Architekturprinzipien definiert
-- Datenmodell vorbereitet
-- Architektur dokumentiert
-- Git-Strategie festgelegt
-- Dokumentationsstruktur vereinheitlicht
+Es werden bewusst noch keine Entscheidungen über Datenstrukturen, Programmiersprache oder technische Umsetzung getroffen.
 
 ---
 
-# Nächste Phase
+# Bisherige Erkenntnisse
 
-## Phase 1 – Domänenmodell
+Während der Domain Discovery konnten bereits folgende fachliche Erkenntnisse gewonnen werden:
 
-Die nächsten Arbeiten konzentrieren sich ausschließlich auf die Fachdomäne.
+## Reise
 
-Geplante Arbeitsschritte:
-
-1. Ubiquitous Language entwickeln
-2. Fachbegriffe definieren
-3. Business Rules dokumentieren
-4. TRAVEL_MODEL.md erstellen
-5. DATA_MODEL.md daraus ableiten
-
-Eine technische Implementierung erfolgt erst nach Abschluss dieser Phase.
+- Eine Reise beginnt mit dem bewussten Aufbruch aus dem Alltag.
+- Eine Reise endet mit der bewussten Rückkehr in den Alltag.
 
 ---
 
-# Repository
+## Etappe
 
-| Bereich | Wert |
-|---------|------|
-| Repository | lodes-static |
-| Branch | main |
-
----
-
-# Dokumentationsstatus
-
-| Dokument | Status |
-|-----------|--------|
-| PROJECT.md | ✅ vorhanden |
-| PROJECT_CHARTER.md | ✅ Version 1.0.0 |
-| WORKING_AGREEMENT.md | ✅ Version 1.0.0 |
-| CURRENT_STATUS.md | ✅ Version 1.0.0 |
-| NEXT_STEPS.md | ⏳ wird als Nächstes aktualisiert |
-| DECISIONS.md | ⏳ wird als Nächstes aktualisiert |
-| ARCHITECTURE.md | ✅ vorhanden |
-| DATA_MODEL.md | ✅ vorhanden |
-| CHANGELOG.md | ✅ vorhanden |
+- Eine Reise besteht aus mehreren Etappen.
+- Eine Etappe beschreibt einen tatsächlich erlebten Abschnitt einer Reise.
+- Etappen werden durch das reale Reisegeschehen bestimmt und nicht durch eine ursprüngliche Planung.
 
 ---
 
-# Zusammenfassung
+## Region
 
-Die Dokumentationsphase bildet das stabile Fundament des Projekts.
+- Regionen sind Erinnerungsräume.
+- Sie werden nicht durch politische Grenzen bestimmt, sondern durch Landschaft, Atmosphäre und den persönlichen Reiseeindruck.
 
-Mit dem Abschluss von Phase 0 verfügt Travel Archive über eine klar strukturierte Projektorganisation, definierte Verantwortlichkeiten der Projektdokumente sowie dokumentierte Grundsätze für Entwicklung, Architektur und Zusammenarbeit.
+---
 
-Die weitere Entwicklung beginnt mit der fachlichen Modellierung der Domäne und erfolgt weiterhin schrittweise entsprechend den festgelegten Projektprinzipien.
+## Aufenthalt
+
+- Aufenthalte strukturieren den Aufenthalt innerhalb einer Etappe.
+- Von einem Aufenthalt aus entstehen Tagestouren und Erlebnisse.
+
+---
+
+## Erinnerungen
+
+Die wichtigste Erkenntnis der bisherigen Analyse lautet:
+
+**Travel Archive ist kein Reiseverwaltungssystem.**
+
+Der fachliche Kern des Projekts besteht darin, Erinnerungen an das gemeinsame Reiseleben wieder erlebbar zu machen.
+
+Fotos, GPX-Routen, Orte und Geschichten dienen dabei als Erinnerungsanker.
+
+---
+
+# Offene Fragestellungen
+
+Folgende Themen werden in den nächsten Schritten weiter untersucht:
+
+- Was ist eine Erinnerung im fachlichen Sinn?
+- Welche Arten von Erinnerungsankern existieren?
+- Wie hängen Reisen, Etappen und Erinnerungen zusammen?
+- Welche Begriffe gehören dauerhaft zur gemeinsamen Fachsprache?
+
+---
+
+# Nächster Schritt
+
+Fortsetzung der Domain Discovery.
+
+Der Fokus liegt weiterhin ausschließlich auf dem fachlichen Verständnis der Domäne.
+
+Erst nach Abschluss dieser Phase werden Domänenmodell, Softwarearchitektur und Implementierung abgeleitet.
+
+---
+
+# Bemerkung
+
+Die Dokumentation wird schrittweise überarbeitet.
+
+Alle Dokumente der Version 2.x orientieren sich an der in PROJECT.md beschriebenen Vision und den dort definierten Projektzielen.
