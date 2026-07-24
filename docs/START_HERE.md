@@ -1,84 +1,76 @@
-# START_HERE.md
+# START_HERE
 
-# Travel Archive
+# Willkommen im Projekt Travel Archive
 
-## Willkommen
+Dieses Dokument ist der Einstiegspunkt für jede neue Arbeitssitzung.
 
-Willkommen im Projekt **Travel Archive**.
+Es beschreibt die Reihenfolge, in der das Projekt zu verstehen ist.
 
-Dieses Dokument ist der offizielle Einstiegspunkt in das Projekt.
-
-Es richtet sich an:
-
-- neue Chats,
-- neue Mitwirkende,
-- sowie den Wiedereinstieg nach längeren Projektpausen.
-
-Es beschreibt nicht das Projekt selbst, sondern verweist auf die Dokumente, die für das Verständnis des aktuellen Projektstands erforderlich sind.
+Mit der Projektarbeit darf erst begonnen werden, nachdem die folgenden Dokumente vollständig gelesen wurden.
 
 ---
 
-# Projektstatus
+# Pflichtlektüre
 
-| Feld | Wert |
-|------|------|
-| Dokumentationsversion | 1.0.0 |
-| Projektphase | Phase 1 – Domänenmodellierung |
-| Letzter abgeschlossener Meilenstein | Phase 0 – Dokumentation und Projektgrundlagen |
+Die folgenden Dokumente sind vollständig und in der angegebenen Reihenfolge zu lesen.
 
----
+1. PROJECT_CONSTITUTION.md
+2. PROJECT.md
+3. CURRENT_STATUS.md
+4. NEXT_STEPS.md
+5. DECISIONS.md
+6. WORKFLOW.md
 
-# Empfohlene Lesereihenfolge
-
-## 1. PROJECT.md
-
-Vision, Ziele und Projektbeschreibung.
+Erst nach dem vollständigen Lesen dieser Dokumente darf mit der Projektarbeit begonnen werden.
 
 ---
 
-## 2. PROJECT_CHARTER.md
+# Verbindliche Arbeitsweise
 
-Langfristige Projektgrundsätze.
+Die Datei **PROJECT_CONSTITUTION.md** definiert die verbindliche Arbeitsweise des Projekts.
 
----
+Sie besitzt Vorrang vor
 
-## 3. WORKING_AGREEMENT.md
+- Vorschlägen der KI
+- Erinnerungen der KI
+- früheren Chats
+- Interpretationen der KI
+- nicht dokumentierten Entscheidungen
 
-Zusammenarbeit, Entwicklungsprozess und Git-Regeln.
+Bei einem Widerspruch gilt ausschließlich die Projektverfassung.
 
----
+Die KI ist verpflichtet, ihre Arbeitsweise an der Projektverfassung auszurichten.
 
-## 4. CURRENT_STATUS.md
+Ist eine Regel verletzt oder der Projektzustand unklar, wird die Arbeit sofort angehalten.
 
-Aktueller Projektstand.
-
----
-
-## 5. NEXT_STEPS.md
-
-Nächste geplante Arbeiten.
+Erst nach vollständiger Klärung darf weitergearbeitet werden.
 
 ---
 
-## 6. DECISIONS.md
+# Ziel des Projekts
 
-Grundlegende Projektentscheidungen.
+Das Projekt Travel Archive verfolgt das Ziel, ein dauerhaft wartbares, nachvollziehbares und dokumentiertes Reisearchiv aufzubauen.
 
----
+Alle Entscheidungen werden dokumentiert.
 
-# Weitere Dokumente
+Alle Änderungen bleiben nachvollziehbar.
 
-Bei Bedarf:
+Alle Arbeitsschritte erfolgen kontrolliert und reproduzierbar.
 
-- README.md
-- ARCHITECTURE.md
-- DATA_MODEL.md
-- CHANGELOG.md
+Die Projektdokumentation bildet jederzeit den tatsächlichen Projektstand ab.
 
 ---
 
-# Ziel
+# Grundsatz
 
-Nach dem Lesen der oben genannten Dokumente soll der aktuelle Stand des Projekts vollständig nachvollziehbar sein.
+Die Dokumentation ist die Wahrheit.
 
-Die eigentliche Projektarbeit beginnt erst danach.
+Nicht die Erinnerung.
+
+Nicht frühere Chats.
+
+Nicht Vermutungen.
+
+Nicht Annahmen der KI.
+
+Jede Arbeit beginnt mit der Dokumentation und endet mit einem eindeutig dokumentierten Projektzustand.
