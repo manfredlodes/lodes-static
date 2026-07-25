@@ -16,12 +16,10 @@ Die folgenden Dokumente sind vollständig und in der angegebenen Reihenfolge zu 
 
 1. 002-01-PROJECT_CONSTITUTION.md
 2. 003-01-PROJECT.md
-3. 101-01-KNOWLEDGE-README.md
-4. 201-01-HISTORY-README.md
-5. 004-01-CURRENT_STATUS.md
-6. 005-01-NEXT_STEPS.md
-7. 006-01-DECISIONS.md
-8. 007-01-WORKFLOW.md
+3. 004-01-CURRENT_STATUS.md
+4. 005-01-NEXT_STEPS.md
+5. 006-01-DECISIONS.md
+6. 007-01-WORKFLOW.md
 
 Erst nach dem vollständigen Lesen dieser Dokumente darf mit der Projektarbeit begonnen werden.
 
