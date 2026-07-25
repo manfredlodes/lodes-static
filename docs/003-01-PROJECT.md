@@ -1,15 +1,23 @@
-# PROJECT.md
-
-# Travel Archive
-
-> Ein digitales Archivsystem für Reisen – unabhängig von ihrer Darstellung.
+# Dokumentinformationen
 
 | Feld | Wert |
 |------|------|
-| Dokument | PROJECT.md |
-| Version | 1.0.0 |
+| Projekt | Travel Archive |
+| Repository | lodes-static |
+| Dokument | 003-01-PROJECT.md |
+| Titel | Projektbeschreibung |
+| Version | 2.0.0 |
 | Status | Aktiv |
-| Letzte Aktualisierung | 2026-07-20 |
+| Gültig ab | 24.07.2026 |
+| Letzte Aktualisierung | 25.07.2026 |
+| Autor | Manfred Lodes |
+| Mitwirkung | ChatGPT (technische und architektonische Beratung) |
+
+---
+
+# Projektbeschreibung
+
+> Ein digitales Archivsystem für Reisen – unabhängig von ihrer Darstellung.
 
 ---
 
@@ -57,7 +65,7 @@ Alle grundlegenden Entscheidungen orientieren sich an folgenden Prinzipien:
 
 Die Entwicklung erfolgt schrittweise. Dokumentation und Implementierung werden gemeinsam weiterentwickelt. Jede Änderung soll nachvollziehbar sein und auf einer dokumentierten Entscheidung beruhen.
 
-Die verbindliche Arbeitsweise für die Projektentwicklung ist im Dokument **WORKING_AGREEMENT.md** beschrieben.
+Die verbindliche Arbeitsweise für die Projektentwicklung ist in **002-01-PROJECT_CONSTITUTION.md** definiert.
 
 ---
 
@@ -180,17 +188,15 @@ Das Projekt gilt als erfolgreich, wenn:
 
 # Zugehörige Projektdokumente
 
-1. START_HERE.md
-2. README.md
-3. PROJECT.md
-4. PROJECT_CHARTER.md
-5. WORKING_AGREEMENT.md
-6. CURRENT_STATUS.md
-7. NEXT_STEPS.md
-8. DECISIONS.md
-9. ARCHITECTURE.md
-10. DATA_MODEL.md
-11. CHANGELOG.md
+1. 001-01-START_HERE.md
+2. 002-01-PROJECT_CONSTITUTION.md
+3. 003-01-PROJECT.md
+4. 004-01-CURRENT_STATUS.md
+5. 005-01-NEXT_STEPS.md
+6. 006-01-DECISIONS.md
+7. 007-01-WORKFLOW.md
+8. 101-01-KNOWLEDGE-README.md
+9. 201-01-HISTORY-README.md
 
 Diese Dokumente bilden gemeinsam die verbindliche Projektdokumentation.
 

@@ -4,7 +4,7 @@
 
 Dieses Dokument ist der Einstiegspunkt für jede neue Arbeitssitzung.
 
-Es beschreibt die Reihenfolge, in der das Projekt zu verstehen ist.
+Dieses Dokument beschreibt die verbindliche Lesereihenfolge, in der das Projekt zu verstehen ist.
 
 Mit der Projektarbeit darf erst begonnen werden, nachdem die folgenden Dokumente vollständig gelesen wurden.
 
@@ -14,12 +14,14 @@ Mit der Projektarbeit darf erst begonnen werden, nachdem die folgenden Dokumente
 
 Die folgenden Dokumente sind vollständig und in der angegebenen Reihenfolge zu lesen.
 
-1. PROJECT_CONSTITUTION.md
-2. PROJECT.md
-3. CURRENT_STATUS.md
-4. NEXT_STEPS.md
-5. DECISIONS.md
-6. WORKFLOW.md
+1. 002-01-PROJECT_CONSTITUTION.md
+2. 003-01-PROJECT.md
+3. 101-01-KNOWLEDGE-README.md
+4. 201-01-HISTORY-README.md
+5. 004-01-CURRENT_STATUS.md
+6. 005-01-NEXT_STEPS.md
+7. 006-01-DECISIONS.md
+8. 007-01-WORKFLOW.md
 
 Erst nach dem vollständigen Lesen dieser Dokumente darf mit der Projektarbeit begonnen werden.
 
@@ -27,7 +29,7 @@ Erst nach dem vollständigen Lesen dieser Dokumente darf mit der Projektarbeit b
 
 # Verbindliche Arbeitsweise
 
-Die Datei **PROJECT_CONSTITUTION.md** definiert die verbindliche Arbeitsweise des Projekts.
+Die Datei **002-01-PROJECT_CONSTITUTION.md** definiert die verbindliche Arbeitsweise des Projekts.
 
 Sie besitzt Vorrang vor
 

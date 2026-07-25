@@ -1,25 +1,32 @@
-# DECISIONS.md
 
-## Dokumentinformationen
+# Dokumentinformationen
 
 | Feld | Wert |
 |------|------|
 | Projekt | Travel Archive |
 | Repository | lodes-static |
-| Dokument | DECISIONS.md |
-| Version | 1.0.0 |
-| Status | Aktiv |
-| Letzte Aktualisierung | 20.07.2026 |
+| Dokument | 006-01-DECISIONS.md |
+| Titel | Projektentscheidungen |
+| Version | 2.0.0 |
+| Status | Freigegeben |
+| Gültig ab | 2026-07-25 |
+| Letzte Aktualisierung | 2026-07-25 |
+| Autor | Manfred Lodes |
+| Mitwirkung | ChatGPT (technische und architektonische Beratung) |
 
 ---
 
-# Zweck
+# Projektentscheidungen
 
-Dieses Dokument dokumentiert alle grundlegenden fachlichen, konzeptionellen und architektonischen Entscheidungen des Projekts.
+## Zweck
 
-Jede Entscheidung wird mit ihrer Begründung festgehalten, damit sie dauerhaft nachvollziehbar bleibt.
+Dieses Dokument dokumentiert alle freigegebenen grundlegenden fachlichen, konzeptionellen und architektonischen Entscheidungen des Projekts.
 
-Regeln zur Zusammenarbeit und zum Entwicklungsprozess werden im Dokument **WORKING_AGREEMENT.md** beschrieben.
+Jede Entscheidung wird mit ihrer Begründung und ihrem Gültigkeitsstatus festgehalten, damit sie dauerhaft nachvollziehbar bleibt.
+
+Projektgrundsätze werden in `002-01-PROJECT_CONSTITUTION.md` beschrieben.
+
+Regeln zur Zusammenarbeit und zum Entwicklungsprozess sind in `007-01-WORKFLOW.md` dokumentiert.
 
 ---
 
@@ -33,7 +40,7 @@ Travel Archive ist ein digitales Archivsystem.
 
 2026-07-19
 
-### Status
+### Gültigkeitsstatus
 
 Gültig
 
@@ -59,7 +66,7 @@ Die Reise ist die zentrale fachliche Entität.
 
 2026-07-19
 
-### Status
+### Gültigkeitsstatus
 
 Gültig
 
@@ -85,7 +92,7 @@ Dokumentation ist Bestandteil der Entwicklung.
 
 2026-07-19
 
-### Status
+### Gültigkeitsstatus
 
 Gültig
 
@@ -105,21 +112,21 @@ Dadurch bleiben Architektur, Ziele und Beweggründe langfristig nachvollziehbar.
 
 ## Titel
 
-Trennung von Projektgrundsätzen und Arbeitsweise.
+Trennung von Projektgrundsätzen und Projektworkflow.
 
 ### Datum
 
 2026-07-20
 
-### Status
+### Gültigkeitsstatus
 
 Gültig
 
 ### Entscheidung
 
-Langfristige Projektgrundsätze werden im **PROJECT_CHARTER.md** dokumentiert.
+Langfristige Projektgrundsätze werden im Dokument `002-01-PROJECT_CONSTITUTION.md` dokumentiert.
 
-Die operative Zusammenarbeit, der Entwicklungsprozess sowie Git-Regeln werden im **WORKING_AGREEMENT.md** dokumentiert.
+Die operative Zusammenarbeit, der Entwicklungsprozess sowie der verbindliche Projektworkflow werden im Dokument `007-01-WORKFLOW.md` dokumentiert.
 
 ### Begründung
 
@@ -137,7 +144,7 @@ Klare Verantwortlichkeiten der Projektdokumente.
 
 2026-07-20
 
-### Status
+### Gültigkeitsstatus
 
 Gültig
 
@@ -149,12 +156,13 @@ Insbesondere gelten folgende Verantwortlichkeiten:
 
 | Dokument | Verantwortung |
 |----------|---------------|
-| PROJECT.md | Vision, Ziele und Projektbeschreibung |
-| PROJECT_CHARTER.md | Langfristige Projektgrundsätze |
-| WORKING_AGREEMENT.md | Operative Zusammenarbeit |
-| CURRENT_STATUS.md | Aktueller Projektstand |
-| NEXT_STEPS.md | Nächste Arbeitsschritte |
-| DECISIONS.md | Grundlegende Entscheidungen |
+| 001-01-START_HERE.md | Einstieg und Dokumentationsreihenfolge |
+| 002-01-PROJECT_CONSTITUTION.md | Projektgrundsätze |
+| 003-01-PROJECT.md | Vision, Ziele und Projektbeschreibung |
+| 004-01-CURRENT_STATUS.md | Aktueller Projektstatus |
+| 005-01-NEXT_STEPS.md | Verbindlicher Arbeitsplan |
+| 006-01-DECISIONS.md | Grundlegende Projektentscheidungen |
+| 007-01-WORKFLOW.md | Projektworkflow und Entwicklungsprozess |
 
 ### Begründung
 
@@ -165,5 +173,6 @@ Eine eindeutige Dokumentationsarchitektur erhöht die Verständlichkeit, reduzie
 # Änderungsverlauf
 
 | Version | Datum | Beschreibung |
-|----------|------------|-----------------------------------------------|
+|----------|------------|--------------------------------------------------------------|
+| 2.0.0 | 25.07.2026 | Dokument auf den neuen Projektstandard konsolidiert; Dokumentkopf vereinheitlicht; Dokumentreferenzen auf nummerierte Struktur umgestellt; Verantwortlichkeiten aktualisiert. |
 | 1.0.0 | 20.07.2026 | Dokument auf neue Dokumentationsarchitektur angepasst; Entscheidungen 004 und 005 aktualisiert bzw. ergänzt. |

@@ -1,4 +1,19 @@
-# PROJECT_CONSTITUTION.md
+# Dokumentinformationen
+
+| Feld | Wert |
+|------|------|
+| Projekt | Travel Archive |
+| Repository | lodes-static |
+| Dokument | 002-01-PROJECT_CONSTITUTION.md |
+| Titel | Projektverfassung |
+| Version | 2.0.0 |
+| Status | Freigegeben |
+| Gültig ab | 24.07.2026 |
+| Letzte Aktualisierung | 25.07.2026 |
+| Autor | Manfred Lodes |
+| Mitwirkung | ChatGPT (technische und architektonische Beratung) |
+
+---
 
 # Projektverfassung
 
@@ -7,6 +22,10 @@
 > Die Projektverfassung besitzt Vorrang vor allen anderen Projektdokumenten, Arbeitsanweisungen, Vorschlägen der KI sowie Interpretationen oder Erinnerungen.
 >
 > Änderungen an dieser Projektverfassung erfolgen ausschließlich nach ausdrücklicher Zustimmung des Projektleiters.
+
+Im Projekt Travel Archive ist der Projektleiter die Instanz, die alle fachlichen und organisatorischen Entscheidungen trifft.
+
+Die KI übernimmt ausschließlich eine beratende und ausführende Rolle im Rahmen dieser Projektverfassung.
 
 ---
 
@@ -38,7 +57,7 @@ Bei Widersprüchen gilt ausschließlich die Dokumentation.
 
 # Regel 2 – Pflichtlektüre
 
-Vor Beginn jeder Arbeitssitzung sowie nach jedem Chatwechsel sind die in START_HERE.md definierten Dokumente vollständig zu lesen.
+Vor Beginn jeder Arbeitssitzung sowie nach jedem Chatwechsel sind die in **001-01-START_HERE.md** definierten Dokumente vollständig zu lesen.
 
 Erst danach darf mit der Projektarbeit begonnen werden.
 
@@ -60,15 +79,23 @@ Improvisationen sind unzulässig.
 
 # Regel 4 – Kleine nachvollziehbare Schritte
 
-Es wird immer nur eine fachliche Änderung gleichzeitig durchgeführt.
+Es wird immer nur an genau einem Dokument oder einer klar abgegrenzten fachlichen Aufgabe gearbeitet.
 
-Nach jeder Änderung erfolgen:
+Die Zusammenarbeit erfolgt nach dem Step-by-Step-Prinzip (SBS).
 
-1. Kontrolle
-2. Dokumentation
-3. Commit (falls vorgesehen)
+Ein Wechsel zu einem anderen Dokument oder Thema erfolgt erst nach ausdrücklicher Freigabe durch den Projektleiter.
+
+Dokumentänderungen werden grundsätzlich in drei Schritten durchgeführt:
+
+1. Änderungsübersicht (Diff)
+2. Prüfung und Freigabe durch den Projektleiter
+3. Erstellung der endgültigen Markdown-Datei
+
+Erst danach gilt ein Arbeitsschritt als abgeschlossen.
 
 Erst danach beginnt der nächste Arbeitsschritt.
+
+Mehrere parallele Änderungen sind unzulässig.
 
 ---
 
@@ -176,7 +203,7 @@ Die KI darf sich nicht auf Erinnerungen, Annahmen oder Interpretationen berufen,
 
 Im Zweifel gilt folgende Reihenfolge:
 
-1. PROJECT_CONSTITUTION.md
+1. 002-01-PROJECT_CONSTITUTION.md
 2. übrige Projektdokumentation
 3. definierter Git-Referenzzustand
 4. erst danach die Interpretation der KI
