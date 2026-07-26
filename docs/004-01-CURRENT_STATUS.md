@@ -6,7 +6,7 @@
 | Repository | lodes-static |
 | Dokument | 004-01-CURRENT_STATUS.md |
 | Titel | Aktueller Projektstatus |
-| Version | 4.0.0 |
+| Version | 4.1.0 |
 | Status | Freigegeben |
 | Gültig ab | 2026-07-26 |
 | Letzte Aktualisierung | 2026-07-26 |
@@ -43,7 +43,7 @@ Der Schwerpunkt liegt nun auf der fachlichen Modellierung der Domäne als Grundl
 
 Ziele:
 
-- Entwicklung der Ubiquitous Language
+- Entwicklung der Ubiquitous Language ✅ abgeschlossen
 - Definition der Fachbegriffe
 - Dokumentation der Business Rules
 - Identifikation der Domänenobjekte
@@ -55,22 +55,21 @@ Ziele:
 
 | Bereich | Status |
 |---------|--------|
-| Aktueller Arbeitsschritt | Beginn der Domain Discovery |
+| Aktueller Arbeitsschritt | Fachbegriffe definieren |
 | Status | Aktiv |
 | Priorität | Hoch |
-| Ziel | Entwicklung der Ubiquitous Language |
+| Ziel | Definition der Fachbegriffe |
 
 ---
 
 # Nächster Meilenstein
 
-Nach Abschluss der Ubiquitous Language folgen:
+Nach Abschluss der Fachbegriffe folgen:
 
-1. Fachbegriffe definieren
-2. Business Rules dokumentieren
-3. Domänenobjekte identifizieren
-4. Fachliches Domänenmodell entwickeln
-5. Datenmodell ableiten
+1. Business Rules dokumentieren
+2. Domänenobjekte identifizieren
+3. Fachliches Domänenmodell entwickeln
+4. Datenmodell ableiten
 
 Die Reihenfolge richtet sich nach dem verbindlichen Arbeitsplan in **005-01-NEXT_STEPS.md**.
 
@@ -108,6 +107,17 @@ Die technische Vorbereitungsphase ist abgeschlossen.
 
 Die Projektdokumentation bildet den freigegebenen Referenzzustand.
 
-Die aktuelle Projektarbeit konzentriert sich auf die Domain Discovery. Der erste Arbeitsschritt ist die Entwicklung der Ubiquitous Language als Grundlage für das fachliche Domänenmodell des Travel Archive.
+Die Entwicklung der **Ubiquitous Language (Version 0.2.0)** wurde abgeschlossen.
+
+Der nächste freigegebene Arbeitsschritt ist die **Definition der Fachbegriffe**. Diese bildet die Grundlage für die anschließende Dokumentation der Business Rules sowie die Entwicklung des fachlichen Domänenmodells des Travel Archive.
 
 Dieses Dokument beschreibt den verbindlichen Projektstatus und bildet die Grundlage für alle weiteren Projektarbeiten.
+
+---
+
+# Änderungsverlauf
+
+| Version | Datum | Beschreibung |
+|----------|------------|--------------------------------------------------------------|
+| 4.1.0 | 26.07.2026 | Ubiquitous Language als abgeschlossen markiert; aktueller Arbeitsschritt auf „Fachbegriffe definieren“ aktualisiert. |
+| 4.0.0 | 26.07.2026 | Dokument auf den neuen Projektstandard konsolidiert. |

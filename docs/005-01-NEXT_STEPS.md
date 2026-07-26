@@ -6,10 +6,10 @@
 | Repository | lodes-static |
 | Dokument | 005-01-NEXT_STEPS.md |
 | Titel | Nächste Projektschritte |
-| Version | 3.0.1 |
+| Version | 3.1.0 |
 | Status | Freigegeben |
-| Gültig ab | 2026-07-25 |
-| Letzte Aktualisierung | 2026-07-25 |
+| Gültig ab | 2026-07-26 |
+| Letzte Aktualisierung | 2026-07-26 |
 | Autor | Manfred Lodes |
 | Mitwirkung | ChatGPT (technische und architektonische Beratung) |
 
@@ -39,8 +39,8 @@ Der Fokus liegt nun auf der fachlichen Modellierung der Domäne als Grundlage f�
 
 | Priorität | Aufgabe | Status |
 |-----------|----------|:------:|
-| 1 | Ubiquitous Language entwickeln | 🔄 |
-| 2 | Fachbegriffe definieren | ⏳ |
+| 1 | Ubiquitous Language entwickeln | ✅ |
+| 2 | Fachbegriffe definieren | 🔄 |
 | 3 | Business Rules dokumentieren | ⏳ |
 | 4 | Domänenobjekte identifizieren | ⏳ |
 | 5 | Fachliches Domänenmodell entwickeln | ⏳ |
@@ -58,6 +58,7 @@ Der Fokus liegt nun auf der fachlichen Modellierung der Domäne als Grundlage f�
 | 25.07.2026 | Zielstruktur des Repositorys definiert |
 | 25.07.2026 | Projektwerkzeug fertiggestellt und Repository bereinigt |
 | 25.07.2026 | Repository als **v1.0.0** versioniert |
+| 26.07.2026 | Ubiquitous Language Version 0.2.0 abgeschlossen |
 
 ---
 
@@ -77,12 +78,21 @@ Für die aktuelle Projektphase gelten folgende Grundsätze:
 
 ## Ziel
 
-Beginn der Domain Discovery.
+Fortsetzung der Domain Discovery.
 
 Schwerpunkte:
 
-- Ubiquitous Language erstellen
-- Fachbegriffe sammeln und definieren
+- Fachbegriffe definieren
 - Business Rules dokumentieren
 - Domänenobjekte identifizieren
 - Erste Version des fachlichen Domänenmodells entwickeln
+
+---
+
+# Änderungsverlauf
+
+| Version | Datum | Beschreibung |
+|----------|------------|--------------------------------------------------------------|
+| 3.1.0 | 26.07.2026 | Ubiquitous Language als abgeschlossen markiert; aktueller Arbeitsschritt auf „Fachbegriffe definieren“ aktualisiert. |
+| 3.0.1 | 25.07.2026 | Redaktionelle Korrekturen. |
+| 3.0.0 | 25.07.2026 | Dokument auf den neuen Projektstandard konsolidiert. |

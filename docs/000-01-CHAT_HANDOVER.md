@@ -6,12 +6,14 @@
 | Repository | lodes-static |
 | Dokument | 000-01-CHAT_HANDOVER.md |
 | Titel | Projektübergabe (Chat Handover) |
-| Version | 3.0.0 |
+| Version | 3.1.0 |
 | Status | Aktiv |
 | Gültig ab | 2026-07-26 |
 | Letzte Aktualisierung | 2026-07-26 |
 | Autor | Manfred Lodes |
 | Mitwirkung | ChatGPT (technische und architektonische Beratung) |
+
+---
 
 # Projektübergabe (Chat Handover)
 
@@ -43,17 +45,19 @@ Die Projektgrundlagen und die Basisdokumentation sind freigegeben.
 
 Die technische Vorbereitungsphase ist abgeschlossen.
 
-Der Schwerpunkt liegt nun auf der fachlichen Modellierung der Domäne als Grundlage für Architektur und Datenmodell.
+Der Schwerpunkt liegt auf der fachlichen Modellierung der Domäne als Grundlage für Architektur und Datenmodell.
+
+Die **Ubiquitous Language (Version 0.2.0)** wurde erstellt und bildet die fachliche Grundlage für die weiteren Arbeiten.
 
 ---
 
 # Aktueller Arbeitsschritt
 
-**Beginn der Domain Discovery**
+**Domain Discovery**
 
-Erster Arbeitsschritt:
+Aktueller Arbeitsschritt:
 
-- Ubiquitous Language entwickeln
+- Fachbegriffe definieren
 
 Die weiteren Arbeitsschritte ergeben sich aus `005-01-NEXT_STEPS.md`.
 
@@ -86,6 +90,7 @@ Erst danach gilt die Arbeitseinheit als abgeschlossen.
 6. 005-01-NEXT_STEPS.md
 7. 006-01-DECISIONS.md
 8. 007-01-WORKFLOW.md
+9. 110-01-UBIQUITOUS_LANGUAGE.md
 
 ---
 
@@ -99,3 +104,13 @@ Nach dem Lesen aller Dokumente:
 4. Warte anschließend auf meine Freigabe.
 
 Ziel jeder weiteren Arbeit ist ein konkreter Fortschritt bei der Entwicklung des **Travel Archive**.
+Der nächste fachliche Arbeitsschritt ist die Definition und Konsolidierung der Fachbegriffe auf Basis der Ubiquitous Language.
+
+---
+
+# Änderungsverlauf
+
+| Version | Datum | Beschreibung |
+|----------|------------|--------------------------------------------------------------|
+| 3.1.0 | 26.07.2026 | Projektstand nach Abschluss der Ubiquitous Language aktualisiert; Dokument `110-01-UBIQUITOUS_LANGUAGE.md` in die zu lesenden Dokumente aufgenommen; aktueller Arbeitsschritt auf „Fachbegriffe definieren“ geändert. |
+| 3.0.0 | 26.07.2026 | Dokument auf den neuen Projektstandard konsolidiert. |
