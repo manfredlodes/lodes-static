@@ -6,10 +6,10 @@
 | Repository | lodes-static |
 | Dokument | 004-01-CURRENT_STATUS.md |
 | Titel | Aktueller Projektstatus |
-| Version | 3.0.0 |
+| Version | 4.0.0 |
 | Status | Freigegeben |
-| Gültig ab | 2026-07-25 |
-| Letzte Aktualisierung | 2026-07-25 |
+| Gültig ab | 2026-07-26 |
+| Letzte Aktualisierung | 2026-07-26 |
 | Autor | Manfred Lodes |
 | Mitwirkung | ChatGPT (technische und architektonische Beratung) |
 
@@ -27,35 +27,27 @@ Es dient als verbindliche Referenz für den aktuellen Projektfortschritt und def
 
 # Projektstatus
 
-Das Projekt befindet sich in **Phase 1 – Vorbereitungsphase**.
+Das Projekt befindet sich in **Phase 1 – Domain Discovery**.
 
-Die Projektgrundlagen wurden geschaffen und die Basisdokumentation wurde konsolidiert.
+Die technische Vorbereitungsphase wurde erfolgreich abgeschlossen.
 
-Der Schwerpunkt liegt nun auf der technischen Vorbereitung des Projekts.
+Die Projektgrundlagen sowie die Basisdokumentation bilden den freigegebenen Referenzzustand.
 
-Hierzu wird zunächst das Werkzeug
-
-```text
-tools/create_project_structure.sh
-```
-
-entwickelt, welches die vollständige Repositorystruktur einschließlich der Projektdokumentation automatisch erzeugt.
-
-Die fachliche Arbeit (Domain Discovery) beginnt erst nach erfolgreicher Fertigstellung und Erprobung dieses Werkzeugs.
+Der Schwerpunkt liegt nun auf der fachlichen Modellierung der Domäne als Grundlage für die weitere Architektur- und Datenmodellierung des Travel Archive.
 
 ---
 
 # Aktueller Meilenstein
 
-**Technische Vorbereitung des Projekts**
+**Domain Discovery**
 
 Ziele:
 
-- Entwicklung von `tools/create_project_structure.sh`
-- Automatische Erzeugung der Repositorystruktur
-- Automatische Anlage der Dokumentationsstruktur
-- Erzeugung aller Standarddokumente
-- Sicherstellung einer reproduzierbaren Projektinitialisierung
+- Entwicklung der Ubiquitous Language
+- Definition der Fachbegriffe
+- Dokumentation der Business Rules
+- Identifikation der Domänenobjekte
+- Entwicklung des fachlichen Domänenmodells
 
 ---
 
@@ -63,25 +55,24 @@ Ziele:
 
 | Bereich | Status |
 |---------|--------|
-| Aktueller Arbeitsschritt | Entwicklung von `tools/create_project_structure.sh` |
-| Status | In Vorbereitung |
+| Aktueller Arbeitsschritt | Beginn der Domain Discovery |
+| Status | Aktiv |
 | Priorität | Hoch |
-| Ziel | Automatisierte Erzeugung der vollständigen Projektstruktur |
+| Ziel | Entwicklung der Ubiquitous Language |
 
 ---
 
 # Nächster Meilenstein
 
-Nach erfolgreicher Implementierung des Projektwerkzeugs beginnt die fachliche Arbeit der **Phase 1 – Domain Discovery**.
+Nach Abschluss der Ubiquitous Language folgen:
 
-Geplante Arbeitsschritte:
+1. Fachbegriffe definieren
+2. Business Rules dokumentieren
+3. Domänenobjekte identifizieren
+4. Fachliches Domänenmodell entwickeln
+5. Datenmodell ableiten
 
-1. Ubiquitous Language entwickeln
-2. Fachbegriffe definieren
-3. Business Rules dokumentieren
-4. Domänenobjekte identifizieren
-5. Fachliches Domänenmodell entwickeln
-6. Datenmodell ableiten
+Die Reihenfolge richtet sich nach dem verbindlichen Arbeitsplan in **005-01-NEXT_STEPS.md**.
 
 ---
 
@@ -91,8 +82,8 @@ Geplante Arbeitsschritte:
 |---------|------|
 | Repository | lodes-static |
 | Branch | main |
-| Aktuelle Phase | Phase 1 – Vorbereitungsphase |
-| Aktueller Meilenstein | Entwicklung des Projektwerkzeugs |
+| Aktuelle Phase | Phase 1 – Domain Discovery |
+| Aktueller Meilenstein | Domain Discovery |
 
 ---
 
@@ -105,18 +96,18 @@ Geplante Arbeitsschritte:
 | 002-01-PROJECT_CONSTITUTION.md | ✅ Freigegeben |
 | 003-01-PROJECT.md | ✅ Freigegeben |
 | 004-01-CURRENT_STATUS.md | ✅ Freigegeben |
-| 005-01-NEXT_STEPS.md | 🔄 Überarbeitung |
-| 006-01-DECISIONS.md | 🔄 Überarbeitung |
+| 005-01-NEXT_STEPS.md | ✅ Freigegeben |
+| 006-01-DECISIONS.md | ✅ Freigegeben |
 | 007-01-WORKFLOW.md | ✅ Freigegeben |
 
 ---
 
 # Zusammenfassung
 
-Die Projektgrundlagen sind abgeschlossen.
+Die technische Vorbereitungsphase ist abgeschlossen.
 
-Die aktuelle Priorität ist die Entwicklung des Werkzeugs `tools/create_project_structure.sh`, das die vereinbarte Repositorystruktur vollständig erzeugt.
+Die Projektdokumentation bildet den freigegebenen Referenzzustand.
 
-Nach erfolgreicher Implementierung beginnt die fachliche Modellierung des Travel Archive im Rahmen der Domain Discovery.
+Die aktuelle Projektarbeit konzentriert sich auf die Domain Discovery. Der erste Arbeitsschritt ist die Entwicklung der Ubiquitous Language als Grundlage für das fachliche Domänenmodell des Travel Archive.
 
 Dieses Dokument beschreibt den verbindlichen Projektstatus und bildet die Grundlage für alle weiteren Projektarbeiten.

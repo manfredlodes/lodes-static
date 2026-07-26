@@ -6,10 +6,10 @@
 | Repository | lodes-static |
 | Dokument | 000-01-CHAT_HANDOVER.md |
 | Titel | Projektübergabe (Chat Handover) |
-| Version | 2.0.0 |
+| Version | 3.0.0 |
 | Status | Aktiv |
-| Gültig ab | 2026-07-25 |
-| Letzte Aktualisierung | 2026-07-25 |
+| Gültig ab | 2026-07-26 |
+| Letzte Aktualisierung | 2026-07-26 |
 | Autor | Manfred Lodes |
 | Mitwirkung | ChatGPT (technische und architektonische Beratung) |
 
@@ -27,232 +27,35 @@ Die übrigen Projektdokumente bilden die verbindliche Wissensbasis des Projekts.
 
 # Projektziel
 
-Das Ziel dieses Projekts ist die Entwicklung eines statischen **Travel Archive**, das die bestehende WordPress-Website **lodes.ch** vollständig ersetzt.
+Das Ziel dieses Projekts ist die Entwicklung eines digitalen **Travel Archive**, das die bestehende WordPress-Website **lodes.ch** langfristig ersetzt.
+
+Das Archiv bildet den zentralen Datenbestand. Anwendungen – beginnend mit der statischen Website – greifen auf diesen Datenbestand zu und präsentieren ihn.
 
 Alle Arbeiten müssen dieses Ziel unmittelbar unterstützen.
-
-Die Dokumentation dient ausschließlich dazu, dass ein neuer Chat den Projektstand vollständig übernehmen und ohne Informationsverlust weiterarbeiten kann.
 
 ---
 
 # Aktuelle Projektphase
 
-**Phase 1 – Vorbereitungsphase**
+**Phase 1 – Domain Discovery**
 
-Die Basisdokumentation ist freigegeben.
+Die Projektgrundlagen und die Basisdokumentation sind freigegeben.
 
-Der aktuell freigegebene Arbeitsschritt ist die Entwicklung von
+Die technische Vorbereitungsphase ist abgeschlossen.
 
-```text
-tools/create_project_structure.sh
-```
-
-Dieses Script erzeugt die vereinbarte Repositorystruktur und legt alle Standarddokumente automatisch an.
-
-Nach erfolgreicher Implementierung beginnt die fachliche Modellierung (Domain Discovery).
+Der Schwerpunkt liegt nun auf der fachlichen Modellierung der Domäne als Grundlage für Architektur und Datenmodell.
 
 ---
 
 # Aktueller Arbeitsschritt
 
-Implementierung von
+**Beginn der Domain Discovery**
 
-```text
-tools/create_project_structure.sh
-```
+Erster Arbeitsschritt:
 
-### Ziel
+- Ubiquitous Language entwickeln
 
-Das Script soll:
-
-- die vollständige Repositorystruktur erzeugen,
-- alle Standarddokumente automatisch anlegen,
-- bestehende Dateien niemals überschreiben,
-- beliebig oft ausführbar sein.
-
-Die folgende Repositorystruktur ist die verbindliche Spezifikation für dieses Script.
-
----
-
-# Zielstruktur des Repositorys (temporär)
-
-## Zweck
-
-Die folgende Struktur beschreibt den vereinbarten Zielzustand des Projekts.
-
-Sie dient ausschließlich während der Vorbereitungsphase als Spezifikation für die Entwicklung von
-
-```text
-tools/create_project_structure.sh
-```
-
-Nach erfolgreicher Implementierung des Scripts wird dieser Abschnitt aus dem CHAT_HANDOVER entfernt.
-
----
-# Vorgaben für neu angelegte Dokumente
-
-Alle neu angelegten Projektdokumente verwenden den einheitlichen Dokumentkopf des Projekts.
-
-Der Dokumentkopf ist verbindlicher Bestandteil jedes Markdown-Dokuments im Repository.
-
-Das Script
-
-```text
-tools/create_project_structure.sh
-```
-
-muss beim Erzeugen neuer Standarddokumente diesen Dokumentkopf automatisch einfügen.
-
-Beispiel:
-
-```markdown
-# Dokumentinformationen
-
-| Feld | Wert |
-|------|------|
-| Projekt | Travel Archive |
-| Repository | lodes-static |
-| Dokument | <Dateiname> |
-| Titel | <Dokumenttitel> |
-| Version | 0.1.0 |
-| Status | Entwurf |
-| Gültig ab | <Datum> |
-| Letzte Aktualisierung | <Datum> |
-| Autor | Manfred Lodes |
-| Mitwirkung | ChatGPT (technische und architektonische Beratung) |
-```
-
-Der Inhalt der Felder ist abhängig vom jeweiligen Dokument. Die Struktur des Dokumentkopfs ist jedoch für alle Projektdokumente identisch.
-
-# Repositorystruktur
-
-```text
-Travel Archive
-
-│
-
-├── README.md
-
-├── LICENSE
-
-├── .gitignore
-
-│
-
-├── docs
-
-│   │
-
-│   ├── 001-01-START_HERE.md
-
-│   ├── 002-01-PROJECT_CONSTITUTION.md
-
-│   ├── 003-01-PROJECT.md
-
-│   ├── 004-01-CURRENT_STATUS.md
-
-│   ├── 005-01-NEXT_STEPS.md
-
-│   ├── 006-01-DECISIONS.md
-
-│   ├── 007-01-WORKFLOW.md
-
-│   │
-
-│   ├── KNOWLEDGE
-
-│   │   ├── 101-01-KNOWLEDGE-README.md
-
-│   │   ├── 110-UBIQUITOUS_LANGUAGE
-
-│   │   ├── 120-BUSINESS_RULES
-
-│   │   ├── 130-DOMAIN_MODEL
-
-│   │   ├── 140-DATA_MODEL
-
-│   │   └── 150-CONCEPTS
-
-│   │
-
-│   ├── HISTORY
-
-│   │   ├── 201-01-HISTORY-README.md
-
-│   │   ├── 210-01-CHANGELOG.md
-
-│   │   ├── 220-01-MILESTONES.md
-
-│   │   └── ARCHIVE
-
-│   │
-
-│   ├── ARCHITECTURE
-
-│   │   ├── 301-01-ARCHITECTURE-README.md
-
-│   │   ├── 310-STATIC_SITE
-
-│   │   ├── 320-DATA_PIPELINE
-
-│   │   ├── 330-JSON_SCHEMA
-
-│   │   └── 340-TOOLS
-
-│   │
-
-│   └── REFERENCES
-
-│       ├── 401-01-REFERENCES-README.md
-
-│       ├── Standards
-
-│       ├── Links
-
-│       ├── APIs
-
-│       └── Literatur
-
-│
-
-├── data
-
-│   ├── trips
-
-│   ├── locations
-
-│   ├── media
-
-│   ├── tracks
-
-│   └── cache
-
-│
-
-├── site
-
-│   ├── assets
-
-│   ├── css
-
-│   ├── js
-
-│   ├── templates
-
-│   └── images
-
-│
-
-└── tools
-
-    ├── importer
-
-    ├── exporter
-
-    ├── validator
-
-    └── scripts
-```
+Die weiteren Arbeitsschritte ergeben sich aus `005-01-NEXT_STEPS.md`.
 
 ---
 
@@ -265,9 +68,11 @@ Der neue Chat arbeitet nach folgenden Schritten:
 3. Den freigegebenen Arbeitsschritt bestimmen.
 4. Nach meiner Freigabe genau an dieser Stelle weiterarbeiten.
 
-Das Ziel des Projekts ist ausschließlich die Entwicklung des Travel Archive.
-
 Dokumentationsänderungen erfolgen nur, wenn sie durch Änderungen des Projektstandes erforderlich sind oder die Weiterarbeit verhindern.
+
+Nach Abschluss einer Arbeitseinheit ist zu prüfen, ob betroffene Projektdokumente aktualisiert werden müssen.
+
+Erst danach gilt die Arbeitseinheit als abgeschlossen.
 
 ---
 
@@ -290,7 +95,7 @@ Nach dem Lesen aller Dokumente:
 
 1. Fasse den aktuellen Projektstand zusammen.
 2. Nenne den aktuell freigegebenen Arbeitsschritt.
-3. Weise nur auf Widersprüche hin, die die Weiterarbeit tatsächlich verhindern.
+3. Weise ausschließlich auf Widersprüche hin, die die Fortsetzung der aktuell freigegebenen Arbeit verhindern.
 4. Warte anschließend auf meine Freigabe.
 
 Ziel jeder weiteren Arbeit ist ein konkreter Fortschritt bei der Entwicklung des **Travel Archive**.

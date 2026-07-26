@@ -6,10 +6,10 @@
 | Repository | lodes-static |
 | Dokument | 007-01-WORKFLOW.md |
 | Titel | Projektworkflow |
-| Version | 2.0.0 |
+| Version | 2.1.0 |
 | Status | Freigegeben |
-| Gültig ab | 2026-07-25 |
-| Letzte Aktualisierung | 2026-07-25 |
+| Gültig ab | 2026-07-26 |
+| Letzte Aktualisierung | 2026-07-26 |
 | Autor | Manfred Lodes |
 | Mitwirkung | ChatGPT (technische und architektonische Beratung) |
 
@@ -106,6 +106,20 @@ Für die Zusammenarbeit gelten folgende verbindliche Regeln:
 
 ---
 
+## Abschluss einer Arbeitseinheit
+
+Eine Arbeitseinheit gilt erst dann als abgeschlossen, wenn:
+
+1. alle Änderungen gespeichert wurden,
+2. alle betroffenen Projektdokumente überprüft wurden,
+3. erforderliche Dokumentationsänderungen durchgeführt wurden,
+4. der Projektzustand konsistent ist,
+5. der nächste Arbeitsschritt eindeutig festgelegt wurde.
+
+Erst danach beginnt die nächste Arbeitseinheit.
+
+---
+
 ## Kennzeichnung von Arbeitsschritten
 
 Die Kennzeichnungen dienen der schnellen Orientierung und werden im gesamten Projekt konsistent verwendet.
@@ -137,5 +151,6 @@ Diese Kennzeichnungen werden während des gesamten Projekts konsequent verwendet
 
 | Version | Datum | Beschreibung |
 |----------|------------|--------------------------------------------------------------|
+| 2.1.0 | 26.07.2026 | Abschnitt „Abschluss einer Arbeitseinheit“ ergänzt und an Entscheidung 006 angepasst. |
 | 2.0.0 | 25.07.2026 | Dokument auf den neuen Projektstandard konsolidiert; Dokumentkopf vereinheitlicht; Workflow an das SBS-Prinzip angepasst; Diff-Workflow und Dokumentbearbeitung ergänzt. |
 | 0.2 | 20.07.2026 | Erste dokumentierte Workflow-Version. |

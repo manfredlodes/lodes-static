@@ -1,4 +1,3 @@
-
 # Dokumentinformationen
 
 | Feld | Wert |
@@ -7,10 +6,10 @@
 | Repository | lodes-static |
 | Dokument | 006-01-DECISIONS.md |
 | Titel | Projektentscheidungen |
-| Version | 2.0.0 |
+| Version | 2.1.0 |
 | Status | Freigegeben |
-| Gültig ab | 2026-07-25 |
-| Letzte Aktualisierung | 2026-07-25 |
+| Gültig ab | 2026-07-26 |
+| Letzte Aktualisierung | 2026-07-26 |
 | Autor | Manfred Lodes |
 | Mitwirkung | ChatGPT (technische und architektonische Beratung) |
 
@@ -170,9 +169,45 @@ Eine eindeutige Dokumentationsarchitektur erhöht die Verständlichkeit, reduzie
 
 ---
 
+# Entscheidung 006
+
+## Titel
+
+Arbeitseinheiten werden erst nach vollständiger Dokumentation abgeschlossen.
+
+### Datum
+
+2026-07-26
+
+### Gültigkeitsstatus
+
+Gültig
+
+### Entscheidung
+
+Eine Arbeitseinheit gilt erst dann als abgeschlossen, wenn alle durch die Änderungen betroffenen Projektdokumente überprüft und – falls erforderlich – aktualisiert wurden.
+
+Hierzu gehören insbesondere:
+
+- `004-01-CURRENT_STATUS.md`
+- `005-01-NEXT_STEPS.md`
+- `006-01-DECISIONS.md`
+- `000-01-CHAT_HANDOVER.md`
+
+Erst danach erfolgt der Abschluss der Arbeitseinheit.
+
+### Begründung
+
+Die Projektdokumentation ist integraler Bestandteil der Entwicklung.
+
+Nur eine konsequent gepflegte Dokumentation ermöglicht eine zuverlässige Projektfortführung, reproduzierbare Entscheidungen und einen konsistenten Wissensstand über Chatgrenzen hinweg.
+
+---
+
 # Änderungsverlauf
 
 | Version | Datum | Beschreibung |
 |----------|------------|--------------------------------------------------------------|
+| 2.1.0 | 26.07.2026 | Entscheidung 006 ergänzt: Arbeitseinheiten gelten erst nach vollständiger Aktualisierung der Projektdokumentation als abgeschlossen. |
 | 2.0.0 | 25.07.2026 | Dokument auf den neuen Projektstandard konsolidiert; Dokumentkopf vereinheitlicht; Dokumentreferenzen auf nummerierte Struktur umgestellt; Verantwortlichkeiten aktualisiert. |
 | 1.0.0 | 20.07.2026 | Dokument auf neue Dokumentationsarchitektur angepasst; Entscheidungen 004 und 005 aktualisiert bzw. ergänzt. |
